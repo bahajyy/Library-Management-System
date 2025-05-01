@@ -28,4 +28,8 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private UserType userType;
+
+    @Column(nullable = false)
+    private String password;
+
 }

@@ -3,10 +3,9 @@ package com.getir.library_management_system.model.mapper;
 import com.getir.library_management_system.model.dto.request.CreateUserRequest;
 import com.getir.library_management_system.model.dto.response.UserResponse;
 import com.getir.library_management_system.model.entity.User;
+import org.springframework.stereotype.Component;
 
-/**
- * Maps between User entities and DTOs.
- */
+@Component
 public class UserMapper {
 
     public static User toEntity(CreateUserRequest request) {
@@ -15,10 +14,12 @@ public class UserMapper {
                 .email(request.getEmail())
                 .phone(request.getPhone())
                 .userType(request.getUserType())
+                .password(request.getPassword())
                 .build();
     }
 
-    public static UserResponse toResponse(User user) {
+
+    public UserResponse toResponse(User user) {
         return UserResponse.builder()
                 .id(user.getId())
                 .name(user.getName())
