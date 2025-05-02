@@ -6,9 +6,6 @@ import lombok.*;
 
 import java.time.LocalDate;
 
-/**
- * Represents a book in the library.
- */
 @Entity
 @Table(name = "books")
 @Data
@@ -25,11 +22,12 @@ public class Book {
 
     private String author;
 
-    @Column(unique = true)
     private String isbn;
 
     private LocalDate publicationDate;
 
     @Enumerated(EnumType.STRING)
     private Genre genre;
+
+    private Boolean available;
 }

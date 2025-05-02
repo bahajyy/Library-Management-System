@@ -4,7 +4,9 @@ import com.getir.library_management_system.model.dto.request.CreateBookRequest;
 import com.getir.library_management_system.model.dto.request.UpdateBookRequest;
 import com.getir.library_management_system.model.dto.response.BookResponse;
 import com.getir.library_management_system.model.entity.Book;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BookMapper {
 
     public static Book toEntity(CreateBookRequest request) {
@@ -12,8 +14,9 @@ public class BookMapper {
                 .title(request.getTitle())
                 .author(request.getAuthor())
                 .isbn(request.getIsbn())
-                .genre(request.getGenre())
                 .publicationDate(request.getPublicationDate())
+                .genre(request.getGenre())
+                .available(true) // kitap yeni eklendiyse kullanılabilir
                 .build();
     }
 
@@ -21,8 +24,9 @@ public class BookMapper {
         book.setTitle(request.getTitle());
         book.setAuthor(request.getAuthor());
         book.setIsbn(request.getIsbn());
-        book.setGenre(request.getGenre());
         book.setPublicationDate(request.getPublicationDate());
+        book.setGenre(request.getGenre());
+        // available alanı update edilmez
     }
 
     public static BookResponse toResponse(Book book) {
@@ -31,8 +35,9 @@ public class BookMapper {
                 .title(book.getTitle())
                 .author(book.getAuthor())
                 .isbn(book.getIsbn())
-                .genre(book.getGenre())
                 .publicationDate(book.getPublicationDate())
+                .genre(book.getGenre())
+                .available(book.getAvailable())
                 .build();
     }
 }
