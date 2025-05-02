@@ -2,26 +2,29 @@ package com.getir.library_management_system.model.dto.request;
 
 import com.getir.library_management_system.model.enums.Genre;
 import jakarta.validation.constraints.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 
 /**
  * DTO used for creating a new book.
  */
-public record CreateBookRequest(
+@Data
+public class CreateBookRequest {
 
-        @NotBlank(message = "Title is required")
-        String title,
+        @NotBlank
+        private String title;
 
-        @NotBlank(message = "Author is required")
-        String author,
+        @NotBlank
+        private String author;
 
-        @NotBlank(message = "ISBN is required")
-        String isbn,
+        @NotBlank
+        private String isbn;
 
-        @PastOrPresent(message = "Publication date cannot be in the future")
-        LocalDate publicationDate,
+        @NotNull
+        private LocalDate publicationDate;
 
-        @NotNull(message = "Genre is required")
-        Genre genre
-) {}
+        @NotNull
+        private Genre genre;
+}
+

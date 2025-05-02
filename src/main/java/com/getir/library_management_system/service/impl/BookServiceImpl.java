@@ -1,5 +1,6 @@
 package com.getir.library_management_system.service.impl;
 
+import com.getir.library_management_system.exception.NotFoundException;
 import com.getir.library_management_system.model.dto.request.CreateBookRequest;
 import com.getir.library_management_system.model.dto.request.UpdateBookRequest;
 import com.getir.library_management_system.model.dto.response.BookResponse;
@@ -12,46 +13,44 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-/**
- * Implements book operations with business logic.
- */
 @Service
 @RequiredArgsConstructor
 public class BookServiceImpl implements BookService {
 
     private final BookRepository bookRepository;
-    private final BookMapper bookMapper;
 
     @Override
     public BookResponse createBook(CreateBookRequest request) {
-        Book savedBook = bookRepository.save(bookMapper.toEntity(request));
-        return bookMapper.toResponse(savedBook);
+        Book book = BookMapper.toEntity(request);
+        return BookMapper.toResponse(bookRepository.save(book));
     }
 
     @Override
     public BookResponse getBook(Long id) {
         Book book = bookRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Book not found"));
-        return bookMapper.toResponse(book);
+                .orElseThrow(() -> new NotFoundException("Book not found"));
+        return BookMapper.toResponse(book);
     }
 
     @Override
     public Page<BookResponse> searchBooks(String keyword, Pageable pageable) {
-        Page<Book> books = bookRepository.findAll(pageable)
-                .map(book -> book); // For now, just returns all paginated
-        return books.map(bookMapper::toResponse);
+        return bookRepository.search(keyword.toLowerCase(), pageable)
+                .map(BookMapper::toResponse);
     }
 
     @Override
     public BookResponse updateBook(Long id, UpdateBookRequest request) {
         Book book = bookRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Book not found"));
-        Book updatedBook = bookMapper.toEntity(request, book);
-        return bookMapper.toResponse(bookRepository.save(updatedBook));
+                .orElseThrow(() -> new NotFoundException("Book not found"));
+        BookMapper.updateEntity(book, request);
+        return BookMapper.toResponse(bookRepository.save(book));
     }
 
     @Override
     public void deleteBook(Long id) {
+        if (!bookRepository.existsById(id)) {
+            throw new NotFoundException("Book not found");
+        }
         bookRepository.deleteById(id);
     }
 }

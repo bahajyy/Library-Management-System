@@ -4,41 +4,35 @@ import com.getir.library_management_system.model.dto.request.CreateBookRequest;
 import com.getir.library_management_system.model.dto.request.UpdateBookRequest;
 import com.getir.library_management_system.model.dto.response.BookResponse;
 import com.getir.library_management_system.model.entity.Book;
-import org.springframework.stereotype.Component;
 
-/**
- * Converts between Book entities and DTOs.
- */
-@Component
 public class BookMapper {
 
-    public Book toEntity(CreateBookRequest request) {
+    public static Book toEntity(CreateBookRequest request) {
         return Book.builder()
-                .title(request.title())
-                .author(request.author())
-                .isbn(request.isbn())
-                .publicationDate(request.publicationDate())
-                .genre(request.genre())
+                .title(request.getTitle())
+                .author(request.getAuthor())
+                .isbn(request.getIsbn())
+                .genre(request.getGenre())
+                .publicationDate(request.getPublicationDate())
                 .build();
     }
 
-    public Book toEntity(UpdateBookRequest request, Book existingBook) {
-        existingBook.setTitle(request.title());
-        existingBook.setAuthor(request.author());
-        existingBook.setIsbn(request.isbn());
-        existingBook.setPublicationDate(request.publicationDate());
-        existingBook.setGenre(request.genre());
-        return existingBook;
+    public static void updateEntity(Book book, UpdateBookRequest request) {
+        book.setTitle(request.getTitle());
+        book.setAuthor(request.getAuthor());
+        book.setIsbn(request.getIsbn());
+        book.setGenre(request.getGenre());
+        book.setPublicationDate(request.getPublicationDate());
     }
 
-    public BookResponse toResponse(Book book) {
-        return new BookResponse(
-                book.getId(),
-                book.getTitle(),
-                book.getAuthor(),
-                book.getIsbn(),
-                book.getPublicationDate(),
-                book.getGenre()
-        );
+    public static BookResponse toResponse(Book book) {
+        return BookResponse.builder()
+                .id(book.getId())
+                .title(book.getTitle())
+                .author(book.getAuthor())
+                .isbn(book.getIsbn())
+                .genre(book.getGenre())
+                .publicationDate(book.getPublicationDate())
+                .build();
     }
 }
