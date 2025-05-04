@@ -1,13 +1,14 @@
 package com.getir.library_management_system.service.impl;
 
 import com.getir.library_management_system.exception.BusinessException;
-import com.getir.library_management_system.model.mapper.BorrowingMapper;
 import com.getir.library_management_system.model.dto.request.BorrowBookRequest;
 import com.getir.library_management_system.model.dto.response.BorrowingResponse;
+import com.getir.library_management_system.model.dto.response.OverdueBookResponse;
 import com.getir.library_management_system.model.entity.Book;
 import com.getir.library_management_system.model.entity.Borrowing;
 import com.getir.library_management_system.model.entity.User;
 import com.getir.library_management_system.model.enums.BorrowingStatus;
+import com.getir.library_management_system.model.mapper.BorrowingMapper;
 import com.getir.library_management_system.repository.BookRepository;
 import com.getir.library_management_system.repository.BorrowingRepository;
 import com.getir.library_management_system.repository.UserRepository;
@@ -17,6 +18,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -101,4 +103,21 @@ public class BorrowingServiceImpl implements BorrowingService {
                 .map(borrowingMapper::toResponse)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public List<OverdueBookResponse> getAllOverdueBooks() {
+        LocalDate today = LocalDate.now();
+        List<Borrowing> overdueList = borrowingRepository.findByReturnedFalseAndDueDateBefore(today);
+
+        return overdueList.stream()
+                .map(borrowing -> OverdueBookResponse.builder()
+                        .borrowingId(borrowing.getId())
+                        .bookTitle(borrowing.getBook().getTitle())
+                        .borrowerName(borrowing.getUser().getName())
+                        .dueDate(borrowing.getDueDate())
+                        .daysOverdue(ChronoUnit.DAYS.between(borrowing.getDueDate(), today))
+                        .build())
+                .toList();
+    }
+
 }

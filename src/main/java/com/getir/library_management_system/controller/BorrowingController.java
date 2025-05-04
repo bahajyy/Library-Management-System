@@ -2,6 +2,7 @@ package com.getir.library_management_system.controller;
 
 import com.getir.library_management_system.model.dto.request.BorrowBookRequest;
 import com.getir.library_management_system.model.dto.response.BorrowingResponse;
+import com.getir.library_management_system.model.dto.response.OverdueBookResponse;
 import com.getir.library_management_system.service.BorrowingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -46,4 +47,11 @@ public class BorrowingController {
     public ResponseEntity<List<BorrowingResponse>> overdueBorrowings() {
         return ResponseEntity.ok(borrowingService.getOverdueBorrowings());
     }
+
+    @GetMapping("/overdueBooks")
+    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    public ResponseEntity<List<OverdueBookResponse>> getOverdueBooks() {
+        return ResponseEntity.ok(borrowingService.getAllOverdueBooks());
+    }
+
 }
