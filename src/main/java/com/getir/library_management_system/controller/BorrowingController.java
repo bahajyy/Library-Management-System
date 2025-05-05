@@ -5,6 +5,7 @@ import com.getir.library_management_system.model.dto.response.BorrowingResponse;
 import com.getir.library_management_system.model.dto.response.OverdueBookResponse;
 import com.getir.library_management_system.service.BorrowingService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/borrowings")
 @RequiredArgsConstructor
+@Slf4j
 public class BorrowingController {
 
     private final BorrowingService borrowingService;
@@ -21,37 +23,46 @@ public class BorrowingController {
     @PostMapping("/borrow")
     @PreAuthorize("hasAuthority('PATRON')")
     public ResponseEntity<BorrowingResponse> borrowBook(@RequestBody BorrowBookRequest request) {
-        return ResponseEntity.ok(borrowingService.borrowBook(request));
+        log.info("User {} is attempting to borrow book with ID {}", request.getUserId(), request.getBookId());
+        BorrowingResponse response = borrowingService.borrowBook(request);
+        log.info("Book borrowed successfully with borrowing ID {}", response.getId());
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/return/{borrowingId}")
     @PreAuthorize("hasAuthority('PATRON')")
     public ResponseEntity<BorrowingResponse> returnBook(@PathVariable Long borrowingId) {
-        return ResponseEntity.ok(borrowingService.returnBook(borrowingId));
+        log.info("Returning book for borrowing ID {}", borrowingId);
+        BorrowingResponse response = borrowingService.returnBook(borrowingId);
+        log.info("Book returned successfully for borrowing ID {}", borrowingId);
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping("/my-history/{userId}")
     @PreAuthorize("hasAuthority('PATRON')")
     public ResponseEntity<List<BorrowingResponse>> myHistory(@PathVariable Long userId) {
+        log.info("Fetching borrowing history for user ID {}", userId);
         return ResponseEntity.ok(borrowingService.getMyBorrowingHistory(userId));
     }
 
     @GetMapping("/all")
     @PreAuthorize("hasAuthority('LIBRARIAN')")
     public ResponseEntity<List<BorrowingResponse>> allBorrowings() {
+        log.info("Fetching all borrowings (Librarian access)");
         return ResponseEntity.ok(borrowingService.getAllBorrowings());
     }
 
     @GetMapping("/overdue")
     @PreAuthorize("hasAuthority('LIBRARIAN')")
     public ResponseEntity<List<BorrowingResponse>> overdueBorrowings() {
+        log.info("Fetching overdue borrowings");
         return ResponseEntity.ok(borrowingService.getOverdueBorrowings());
     }
 
     @GetMapping("/overdueBooks")
     @PreAuthorize("hasAuthority('LIBRARIAN')")
     public ResponseEntity<List<OverdueBookResponse>> getOverdueBooks() {
+        log.info("Fetching detailed overdue book list");
         return ResponseEntity.ok(borrowingService.getAllOverdueBooks());
     }
-
 }

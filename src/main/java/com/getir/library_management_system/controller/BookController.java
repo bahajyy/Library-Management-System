@@ -6,6 +6,7 @@ import com.getir.library_management_system.model.dto.response.BookResponse;
 import com.getir.library_management_system.service.BookService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
@@ -19,25 +20,27 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/books")
 @RequiredArgsConstructor
+@Slf4j
 public class BookController {
 
     private final BookService bookService;
 
-    // Librarians can add books
     @PostMapping
     @PreAuthorize("hasAuthority('LIBRARIAN')")
     public ResponseEntity<BookResponse> createBook(@Valid @RequestBody CreateBookRequest request) {
-        return new ResponseEntity<>(bookService.createBook(request), HttpStatus.CREATED);
+        log.info("Request to create a new book: {}", request.getTitle());
+        BookResponse response = bookService.createBook(request);
+        log.info("Book created with ID: {}", response.getId());
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
-    // All users can view book details
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyAuthority('LIBRARIAN', 'PATRON')")
     public ResponseEntity<BookResponse> getBook(@PathVariable Long id) {
+        log.info("Fetching book details for ID: {}", id);
         return ResponseEntity.ok(bookService.getBook(id));
     }
 
-    // All users can search books
     @GetMapping
     @PreAuthorize("hasAnyAuthority('LIBRARIAN', 'PATRON')")
     public ResponseEntity<Page<BookResponse>> searchBooks(
@@ -45,22 +48,23 @@ public class BookController {
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size
     ) {
+        log.info("Searching books with keyword: '{}', page: {}, size: {}", keyword, page, size);
         return ResponseEntity.ok(bookService.searchBooks(keyword, PageRequest.of(page, size)));
     }
 
-    // Librarians can update books
     @PutMapping("/{id}")
     @PreAuthorize("hasAuthority('LIBRARIAN')")
     public ResponseEntity<BookResponse> updateBook(
             @PathVariable Long id,
             @Valid @RequestBody UpdateBookRequest request) {
+        log.info("Updating book with ID: {}", id);
         return ResponseEntity.ok(bookService.updateBook(id, request));
     }
 
-    // Librarians can delete books
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAuthority('LIBRARIAN')")
     public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
+        log.info("Deleting book with ID: {}", id);
         bookService.deleteBook(id);
         return ResponseEntity.noContent().build();
     }
