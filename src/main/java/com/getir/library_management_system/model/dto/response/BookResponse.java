@@ -16,5 +16,5 @@ public class BookResponse {
     private String isbn;
     private LocalDate publicationDate;
     private Genre genre;
-    private Boolean available;
+    private int stock;
 }

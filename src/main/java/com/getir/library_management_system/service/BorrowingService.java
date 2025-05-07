@@ -13,5 +13,5 @@ public interface BorrowingService {
     List<BorrowingResponse> getAllBorrowings(); // Only for librarians
     List<BorrowingResponse> getOverdueBorrowings(); // Only for librarians
     List<OverdueBookResponse> getAllOverdueBooks();
-
+    String generateOverdueReport();
 }

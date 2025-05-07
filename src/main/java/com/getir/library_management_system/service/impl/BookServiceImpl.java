@@ -1,5 +1,6 @@
 package com.getir.library_management_system.service.impl;
 
+import com.getir.library_management_system.exception.BusinessException;
 import com.getir.library_management_system.exception.NotFoundException;
 import com.getir.library_management_system.model.dto.request.CreateBookRequest;
 import com.getir.library_management_system.model.dto.request.UpdateBookRequest;
@@ -23,6 +24,9 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public BookResponse createBook(CreateBookRequest request) {
+        if (bookRepository.existsByIsbn(request.getIsbn())) {
+            throw new BusinessException("A book with the same ISBN already exists.");
+        }
         log.info("Creating a new book with title: {}", request.getTitle());
         Book book = BookMapper.toEntity(request);
         Book savedBook = bookRepository.save(book);
@@ -57,6 +61,9 @@ public class BookServiceImpl implements BookService {
                     log.warn("Book not found with ID: {}", id);
                     return new NotFoundException("Book not found");
                 });
+        if (!book.getIsbn().equals(request.getIsbn())) {
+            throw new BusinessException("ISBN cannot be changed.");
+        }
         BookMapper.updateEntity(book, request);
         Book updatedBook = bookRepository.save(book);
         log.info("Book updated with ID: {}", updatedBook.getId());

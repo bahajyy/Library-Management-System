@@ -29,5 +29,7 @@ public class Book {
     @Enumerated(EnumType.STRING)
     private Genre genre;
 
-    private Boolean available;
+    @Column(nullable = false)
+    private int stock;
+
 }

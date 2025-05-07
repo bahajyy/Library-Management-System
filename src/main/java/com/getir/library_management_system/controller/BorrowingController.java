@@ -65,4 +65,12 @@ public class BorrowingController {
         log.info("Fetching detailed overdue book list");
         return ResponseEntity.ok(borrowingService.getAllOverdueBooks());
     }
+
+    @GetMapping("/overdueBooks/report")
+    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    public ResponseEntity<String> getOverdueReport() {
+        log.info("Generating overdue book report");
+        return ResponseEntity.ok(borrowingService.generateOverdueReport());
+    }
+
 }

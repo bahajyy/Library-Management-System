@@ -1,5 +1,6 @@
 package com.getir.library_management_system.service.impl;
 
+import com.getir.library_management_system.exception.BusinessException;
 import com.getir.library_management_system.exception.ResourceNotFoundException;
 import com.getir.library_management_system.model.dto.request.CreateUserRequest;
 import com.getir.library_management_system.model.dto.request.UpdateUserRequest;
@@ -30,6 +31,9 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public UserResponse registerUser(CreateUserRequest request) {
+        if (userRepository.existsByEmail(request.getEmail())) {
+            throw new BusinessException("Email is already in use.");
+        }
         log.info("Registering new user with email: {}", request.getEmail());
         User user = userMapper.toEntity(request);
         user.setPassword(passwordEncoder.encode(request.getPassword()));

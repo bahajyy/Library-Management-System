@@ -1,0 +1,32 @@
+2025-05-08 00:48:17 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-08 00:48:17 INFO  c.g.l.LibraryManagementSystemApplication - Starting LibraryManagementSystemApplication using Java 21.0.7 with PID 6463 (/Users/bahajyy/Desktop/getir_final_project/target/classes started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-08 00:48:17 INFO  c.g.l.LibraryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-08 00:48:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-08 00:48:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-08 00:48:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08 00:48:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2025-05-08 00:48:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-08 00:48:20 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-08 00:48:20 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-08 00:48:20 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-08 00:48:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-08 00:48:20 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2073 ms
+2025-05-08 00:48:20 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-08 00:48:20 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-08 00:48:20 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-08 00:48:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08 00:48:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-08 00:48:21 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61855759
+2025-05-08 00:48:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-08 00:48:22 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-08 00:48:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 00:48:23 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-08 00:48:24 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08 00:48:24 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4578a791, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@432f257d, org.springframework.security.web.context.SecurityContextHolderFilter@a53c722, org.springframework.security.web.header.HeaderWriterFilter@5a9f7822, org.springframework.web.filter.CorsFilter@2914e9f2, org.springframework.security.web.authentication.logout.LogoutFilter@33ec1493, com.getir.library_management_system.security.JwtAuthenticationFilter@4df8c935, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a6e3766, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1398e396, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16ed8a29, org.springframework.security.web.access.ExceptionTranslationFilter@1ad0dd0f, org.springframework.security.web.access.intercept.AuthorizationFilter@6e8d1b98]
+2025-05-08 00:48:25 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-08 00:48:25 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-08 00:48:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-05-08 00:48:25 INFO  c.g.l.LibraryManagementSystemApplication - Started LibraryManagementSystemApplication in 7.806 seconds (process running for 8.394)
+2025-05-08 01:01:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 01:01:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-08 01:01:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

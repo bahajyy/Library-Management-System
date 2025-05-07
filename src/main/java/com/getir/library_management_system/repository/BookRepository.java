@@ -14,4 +14,7 @@ public interface BookRepository extends JpaRepository<Book, Long> {
             "LOWER(b.isbn) LIKE %:keyword% OR " +
             "LOWER(b.genre) LIKE %:keyword%")
     Page<Book> search(String keyword, Pageable pageable);
+
+    boolean existsByIsbn(String isbn);
+
 }

@@ -17,4 +17,12 @@ public interface BorrowingRepository extends JpaRepository<Borrowing, Long> {
 
     List<Borrowing> findByReturnedFalseAndDueDateBefore(LocalDate date);
 
+    boolean existsByUserIdAndStatusAndDueDateBefore(Long userId, BorrowingStatus status, LocalDate date);
+
+    long countByUserIdAndStatus(Long userId, BorrowingStatus status);
+
+    boolean existsByUserIdAndBookIdAndStatus(Long userId, Long bookId, BorrowingStatus status);
+
+
+
 }

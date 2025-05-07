@@ -16,7 +16,7 @@ public class BookMapper {
                 .isbn(request.getIsbn())
                 .publicationDate(request.getPublicationDate())
                 .genre(request.getGenre())
-                .available(true) // kitap yeni eklendiyse kullanılabilir
+                .stock(request.getStock())
                 .build();
     }
 
@@ -26,7 +26,7 @@ public class BookMapper {
         book.setIsbn(request.getIsbn());
         book.setPublicationDate(request.getPublicationDate());
         book.setGenre(request.getGenre());
-        // available alanı update edilmez
+        book.setStock(request.getStock());
     }
 
     public static BookResponse toResponse(Book book) {
@@ -37,7 +37,7 @@ public class BookMapper {
                 .isbn(book.getIsbn())
                 .publicationDate(book.getPublicationDate())
                 .genre(book.getGenre())
-                .available(book.getAvailable())
+                .stock(book.getStock())
                 .build();
     }
 }

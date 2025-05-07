@@ -19,9 +19,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.getir.library_management_system.model.enums.BorrowingStatus.BORROWED;
 
 @Slf4j
 @Service
@@ -43,9 +47,23 @@ public class BorrowingServiceImpl implements BorrowingService {
                     return new BusinessException("Book not found");
                 });
 
-        if (!Boolean.TRUE.equals(book.getAvailable())) {
-            log.warn("Book with ID {} is not available", book.getId());
-            throw new BusinessException("Book is not available");
+        long activeBorrowCount = borrowingRepository.countByUserIdAndStatus(request.getUserId(), BorrowingStatus.BORROWED);
+        if (activeBorrowCount >= 5) {
+            throw new BusinessException("You cannot borrow more than 5 books at the same time.");
+        }
+
+        boolean alreadyBorrowed = borrowingRepository.existsByUserIdAndBookIdAndStatus(
+                request.getUserId(), request.getBookId(), BorrowingStatus.BORROWED);
+        if (alreadyBorrowed) {
+            throw new BusinessException("You have already borrowed this book.");
+        }
+
+        if (book.getStock() <= 0) {
+            throw new BusinessException("Book is out of stock");
+        }
+        book.setStock(book.getStock() - 1);
+        if (borrowingRepository.existsByUserIdAndStatusAndDueDateBefore(request.getUserId(), BORROWED, LocalDate.now())) {
+            throw new BusinessException("User has overdue books and cannot borrow new ones.");
         }
 
         User user = userRepository.findById(request.getUserId())
@@ -54,7 +72,6 @@ public class BorrowingServiceImpl implements BorrowingService {
                     return new BusinessException("User not found");
                 });
 
-        book.setAvailable(false);
         bookRepository.save(book);
         log.info("Book {} marked as unavailable", book.getId());
 
@@ -63,7 +80,7 @@ public class BorrowingServiceImpl implements BorrowingService {
                 .user(user)
                 .borrowDate(LocalDate.now())
                 .dueDate(LocalDate.now().plusDays(14))
-                .status(BorrowingStatus.BORROWED)
+                .status(BORROWED)
                 .build();
 
         borrowingRepository.save(borrowing);
@@ -82,13 +99,13 @@ public class BorrowingServiceImpl implements BorrowingService {
                     return new BusinessException("Borrowing not found");
                 });
 
-        if (borrowing.getStatus() != BorrowingStatus.BORROWED) {
+        if (borrowing.getStatus() != BORROWED) {
             log.warn("Borrowing ID {} is not currently active", borrowingId);
             throw new BusinessException("Book is not currently borrowed");
         }
 
         Book book = borrowing.getBook();
-        book.setAvailable(true);
+        book.setStock(book.getStock() + 1);
         bookRepository.save(book);
         log.info("Book {} marked as available", book.getId());
 
@@ -125,7 +142,7 @@ public class BorrowingServiceImpl implements BorrowingService {
     public List<BorrowingResponse> getOverdueBorrowings() {
         log.info("Fetching overdue borrowings");
         List<Borrowing> overdue = (List<Borrowing>) borrowingRepository
-                .findByStatusAndDueDateBefore(BorrowingStatus.BORROWED, LocalDate.now(), Pageable.unpaged());
+                .findByStatusAndDueDateBefore(BORROWED, LocalDate.now(), Pageable.unpaged());
 
         return overdue.stream()
                 .map(borrowingMapper::toResponse)
@@ -149,4 +166,36 @@ public class BorrowingServiceImpl implements BorrowingService {
                         .build())
                 .toList();
     }
+
+    @Override
+    public String generateOverdueReport() {
+        LocalDate today = LocalDate.now();
+        List<Borrowing> overdueList = borrowingRepository.findByReturnedFalseAndDueDateBefore(today);
+
+        long total = overdueList.size();
+        long days0to5 = overdueList.stream().filter(b -> ChronoUnit.DAYS.between(b.getDueDate(), today) <= 5).count();
+        long days6to10 = overdueList.stream().filter(b -> {
+            long days = ChronoUnit.DAYS.between(b.getDueDate(), today);
+            return days >= 6 && days <= 10;
+        }).count();
+        long days11plus = overdueList.stream().filter(b -> ChronoUnit.DAYS.between(b.getDueDate(), today) > 10).count();
+
+        return """
+                OVERDUE BOOK REPORT
+                -------------------
+                Total Overdue Books: %d
+                0-5 days overdue:    %d
+                6-10 days overdue:   %d
+                >10 days overdue:    %d
+                
+                Report Generated At: %s
+                """.formatted(
+                total,
+                days0to5,
+                days6to10,
+                days11plus,
+                LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+        );
+    }
+
 }
