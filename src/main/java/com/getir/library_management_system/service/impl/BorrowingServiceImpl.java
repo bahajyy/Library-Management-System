@@ -2,6 +2,7 @@ package com.getir.library_management_system.service.impl;
 
 import com.getir.library_management_system.exception.BusinessException;
 import com.getir.library_management_system.model.dto.request.BorrowBookRequest;
+import com.getir.library_management_system.model.dto.response.BookStockUpdate;
 import com.getir.library_management_system.model.dto.response.BorrowingResponse;
 import com.getir.library_management_system.model.dto.response.OverdueBookResponse;
 import com.getir.library_management_system.model.entity.Book;
@@ -9,6 +10,7 @@ import com.getir.library_management_system.model.entity.Borrowing;
 import com.getir.library_management_system.model.entity.User;
 import com.getir.library_management_system.model.enums.BorrowingStatus;
 import com.getir.library_management_system.model.mapper.BorrowingMapper;
+import com.getir.library_management_system.reactive.BookStockPublisher;
 import com.getir.library_management_system.repository.BookRepository;
 import com.getir.library_management_system.repository.BorrowingRepository;
 import com.getir.library_management_system.repository.UserRepository;
@@ -36,6 +38,7 @@ public class BorrowingServiceImpl implements BorrowingService {
     private final BookRepository bookRepository;
     private final UserRepository userRepository;
     private final BorrowingMapper borrowingMapper;
+    private final BookStockPublisher bookStockPublisher;
 
     @Override
     public BorrowingResponse borrowBook(BorrowBookRequest request) {
@@ -85,7 +88,7 @@ public class BorrowingServiceImpl implements BorrowingService {
 
         borrowingRepository.save(borrowing);
         log.info("Borrowing created with ID: {}", borrowing.getId());
-
+        bookStockPublisher.publish(new BookStockUpdate(book.getId(), book.getTitle(), book.getStock()));
         return borrowingMapper.toResponse(borrowing);
     }
 
@@ -113,7 +116,7 @@ public class BorrowingServiceImpl implements BorrowingService {
         borrowing.setReturnDate(LocalDate.now());
         borrowingRepository.save(borrowing);
         log.info("Borrowing {} marked as returned", borrowing.getId());
-
+        bookStockPublisher.publish(new BookStockUpdate(book.getId(), book.getTitle(), book.getStock()));
         return borrowingMapper.toResponse(borrowing);
     }
 
@@ -197,5 +200,4 @@ public class BorrowingServiceImpl implements BorrowingService {
                 LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
         );
     }
-
 }
