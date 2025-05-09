@@ -1,0 +1,1290 @@
+2025-05-09 22:56:57 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 22:56:57 INFO  c.g.l.LibraryManagementSystemApplicationTests - Starting LibraryManagementSystemApplicationTests using Java 21.0.7 with PID 12549 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 22:56:57 INFO  c.g.l.LibraryManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 22:56:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 22:56:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 267 ms. Found 3 JPA repository interfaces.
+2025-05-09 22:56:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 22:56:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 22:56:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 22:57:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 22:57:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 22:57:00 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4604e051
+2025-05-09 22:57:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 22:57:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 22:57:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 22:57:02 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 22:57:03 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 22:57:04 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63f95ac1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14a7e16e, org.springframework.security.web.context.SecurityContextHolderFilter@4bbb00a4, org.springframework.security.web.header.HeaderWriterFilter@407bfc49, org.springframework.web.filter.CorsFilter@59171a5d, org.springframework.security.web.authentication.logout.LogoutFilter@3532f633, com.getir.library_management_system.security.JwtAuthenticationFilter@4f96e484, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f967ad3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c1348c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f286e1d, org.springframework.security.web.access.ExceptionTranslationFilter@ab8b1ef, org.springframework.security.web.access.intercept.AuthorizationFilter@285bee4e]
+2025-05-09 22:57:04 INFO  c.g.l.LibraryManagementSystemApplicationTests - Started LibraryManagementSystemApplicationTests in 7.957 seconds (process running for 9.612)
+2025-05-09 22:57:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 22:57:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 22:57:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:41:42 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:41:42 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13724 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:41:42 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:41:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:41:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 239 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:41:45 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:41:45 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:41:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:41:45 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:41:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:41:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76ed7573
+2025-05-09 23:41:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:41:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:41:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:41:48 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:41:49 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:41:49 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76b195d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5513745d, org.springframework.security.web.context.SecurityContextHolderFilter@3919e2d7, org.springframework.security.web.header.HeaderWriterFilter@b5a6a82, org.springframework.web.filter.CorsFilter@2dda28a3, org.springframework.security.web.authentication.logout.LogoutFilter@13ecedf6, com.getir.library_management_system.security.JwtAuthenticationFilter@2a728076, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@106277d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61186191, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a29476d, org.springframework.security.web.access.ExceptionTranslationFilter@9da8b97, org.springframework.security.web.access.intercept.AuthorizationFilter@6e1787ba]
+2025-05-09 23:41:50 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:41:50 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:41:50 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:41:50 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 8.362 seconds (process running for 10.214)
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Request to create a new book: Book 0
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 0
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 9
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Book created with ID: 9
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Request to create a new book: Book 1
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 1
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 10
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Book created with ID: 10
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Request to create a new book: Book 2
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 2
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 11
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Book created with ID: 11
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Request to create a new book: Book 3
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 3
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 12
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Book created with ID: 12
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Request to create a new book: Book 4
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 4
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 13
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Book created with ID: 13
+2025-05-09 23:41:51 INFO  c.g.l.controller.BookController - Searching books with keyword: 'Book', page: 0, size: 5
+2025-05-09 23:41:51 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: Book
+2025-05-09 23:41:52 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:41:52 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:41:52 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 14
+2025-05-09 23:41:52 INFO  c.g.l.controller.BookController - Book created with ID: 14
+2025-05-09 23:41:52 INFO  c.g.l.controller.BookController - Fetching book details for ID: 14
+2025-05-09 23:41:52 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 14
+2025-05-09 23:41:52 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Test Book
+2025-05-09 23:41:52 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:41:52 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:41:52 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:41:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:41:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:41:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:43:32 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:43:32 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13802 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:43:32 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:43:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:43:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 237 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:43:34 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:43:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:43:35 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:43:35 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:43:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:43:35 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3595086b
+2025-05-09 23:43:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:43:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:43:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:37 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:43:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:43:39 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c92d694, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cfb4b71, org.springframework.security.web.context.SecurityContextHolderFilter@6c3600b7, org.springframework.security.web.header.HeaderWriterFilter@56c72fff, org.springframework.web.filter.CorsFilter@b517988, org.springframework.security.web.authentication.logout.LogoutFilter@611c9d31, com.getir.library_management_system.security.JwtAuthenticationFilter@19240b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c995eae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54fb9c08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cb7ca06, org.springframework.security.web.access.ExceptionTranslationFilter@207512c3, org.springframework.security.web.access.intercept.AuthorizationFilter@4d13b552]
+2025-05-09 23:43:41 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:43:41 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:43:41 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-05-09 23:43:41 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 9.256 seconds (process running for 10.889)
+2025-05-09 23:43:43 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:43:43 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:43:43 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 15
+2025-05-09 23:43:43 INFO  c.g.l.controller.BookController - Book created with ID: 15
+2025-05-09 23:43:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:43:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:43:43 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:43:43 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13802 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:43:43 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:43:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:43:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:43:44 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:43:44 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:43:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:43:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-09 23:43:44 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4236d55
+2025-05-09 23:43:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-09 23:43:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:43:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:43:44 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5cb63d05, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@656ac24, org.springframework.security.web.context.SecurityContextHolderFilter@1205d231, org.springframework.security.web.header.HeaderWriterFilter@29e3c7fe, org.springframework.web.filter.CorsFilter@47861e3c, org.springframework.security.web.authentication.logout.LogoutFilter@2e7e9897, com.getir.library_management_system.security.JwtAuthenticationFilter@aa8f19d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@630f24a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@253dbbc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1618b4fa, org.springframework.security.web.access.ExceptionTranslationFilter@1f0b2ffb, org.springframework.security.web.access.intercept.AuthorizationFilter@7c65b55b]
+2025-05-09 23:43:45 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:43:45 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:43:45 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:43:45 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.412 seconds (process running for 14.832)
+2025-05-09 23:43:45 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:43:45 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:43:45 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 16
+2025-05-09 23:43:45 INFO  c.g.l.controller.BookController - Book created with ID: 16
+2025-05-09 23:43:45 INFO  c.g.l.controller.BookController - Fetching book details for ID: 16
+2025-05-09 23:43:45 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 16
+2025-05-09 23:43:45 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Test Book
+2025-05-09 23:43:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-09 23:43:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-09 23:43:45 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:43:45 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13802 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:43:45 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:43:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:43:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:43:45 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:43:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:43:45 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:43:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-09 23:43:45 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@23b34af8
+2025-05-09 23:43:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-09 23:43:45 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:43:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:43:46 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5eb20abb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7514e658, org.springframework.security.web.context.SecurityContextHolderFilter@1a9ea4d9, org.springframework.security.web.header.HeaderWriterFilter@756fd0aa, org.springframework.web.filter.CorsFilter@2762e667, org.springframework.security.web.authentication.logout.LogoutFilter@571f925f, com.getir.library_management_system.security.JwtAuthenticationFilter@6e3ba10a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59ca0db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33293dac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b35798b, org.springframework.security.web.access.ExceptionTranslationFilter@27d9ba11, org.springframework.security.web.access.intercept.AuthorizationFilter@248f1090]
+2025-05-09 23:43:46 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:43:46 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:43:46 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:43:46 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.963 seconds (process running for 15.956)
+2025-05-09 23:43:46 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:43:46 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:43:46 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 17
+2025-05-09 23:43:46 INFO  c.g.l.controller.BookController - Book created with ID: 17
+2025-05-09 23:43:46 INFO  c.g.l.controller.BookController - Updating book with ID: 17
+2025-05-09 23:43:46 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 17
+2025-05-09 23:43:46 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 17
+2025-05-09 23:43:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-09 23:43:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-09 23:43:46 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:43:46 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13802 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:43:46 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:43:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:43:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:43:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:43:46 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:43:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:43:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-09 23:43:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@c1539bf
+2025-05-09 23:43:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-09 23:43:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:43:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:43:47 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e010e07, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f822222, org.springframework.security.web.context.SecurityContextHolderFilter@1a2a94ae, org.springframework.security.web.header.HeaderWriterFilter@4df207e1, org.springframework.web.filter.CorsFilter@24411981, org.springframework.security.web.authentication.logout.LogoutFilter@735c49cc, com.getir.library_management_system.security.JwtAuthenticationFilter@6f99d91f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36840e6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@600dfbca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43948dc8, org.springframework.security.web.access.ExceptionTranslationFilter@1939ecca, org.springframework.security.web.access.intercept.AuthorizationFilter@6ae1ba63]
+2025-05-09 23:43:47 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:43:47 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:43:47 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:43:47 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.968 seconds (process running for 16.996)
+2025-05-09 23:43:47 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:43:47 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:43:47 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 18
+2025-05-09 23:43:47 INFO  c.g.l.controller.BookController - Book created with ID: 18
+2025-05-09 23:43:47 INFO  c.g.l.controller.BookController - Deleting book with ID: 18
+2025-05-09 23:43:47 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 18
+2025-05-09 23:43:47 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 18
+2025-05-09 23:43:47 INFO  c.g.l.controller.BookController - Fetching book details for ID: 18
+2025-05-09 23:43:47 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 18
+2025-05-09 23:43:47 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 18
+2025-05-09 23:43:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-09 23:43:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-09 23:43:47 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:43:47 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13802 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:43:47 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:43:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:43:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:43:47 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:43:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:43:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:43:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-09 23:43:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@203cab01
+2025-05-09 23:43:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-09 23:43:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:43:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:43:48 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14b0a826, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fef02d9, org.springframework.security.web.context.SecurityContextHolderFilter@1631da37, org.springframework.security.web.header.HeaderWriterFilter@61284400, org.springframework.web.filter.CorsFilter@5ba3e590, org.springframework.security.web.authentication.logout.LogoutFilter@52972465, com.getir.library_management_system.security.JwtAuthenticationFilter@5e615573, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42bfafcc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69c4fe01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67779915, org.springframework.security.web.access.ExceptionTranslationFilter@4b5c0183, org.springframework.security.web.access.intercept.AuthorizationFilter@2393ef6e]
+2025-05-09 23:43:48 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:43:48 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:43:48 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:43:48 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.864 seconds (process running for 17.976)
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Request to create a new book: Book 0
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 0
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 19
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Book created with ID: 19
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Request to create a new book: Book 1
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 1
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 20
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Book created with ID: 20
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Request to create a new book: Book 2
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 2
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 21
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Book created with ID: 21
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Request to create a new book: Book 3
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 3
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 22
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Book created with ID: 22
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Request to create a new book: Book 4
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 4
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 23
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Book created with ID: 23
+2025-05-09 23:43:48 INFO  c.g.l.controller.BookController - Searching books with keyword: 'Book', page: 0, size: 5
+2025-05-09 23:43:48 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: Book
+2025-05-09 23:43:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:43:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-09 23:43:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-09 23:45:08 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:45:08 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13909 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:45:08 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:45:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:45:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 260 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:45:11 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:45:11 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:45:11 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:45:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:45:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:45:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3595086b
+2025-05-09 23:45:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:45:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:45:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:14 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:45:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:45:15 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@bcf8bd7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c92d694, org.springframework.security.web.context.SecurityContextHolderFilter@60f10f6a, org.springframework.security.web.header.HeaderWriterFilter@74cf108b, org.springframework.web.filter.CorsFilter@5cfb4b71, org.springframework.security.web.authentication.logout.LogoutFilter@50cf26b7, com.getir.library_management_system.security.JwtAuthenticationFilter@19240b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e17219, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b517988, org.springframework.security.web.access.ExceptionTranslationFilter@4d8e6daa, org.springframework.security.web.access.intercept.AuthorizationFilter@586be63c]
+2025-05-09 23:45:16 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:45:16 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:45:16 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:45:16 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 8.271 seconds (process running for 9.998)
+2025-05-09 23:45:17 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:45:17 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:45:17 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 24
+2025-05-09 23:45:17 INFO  c.g.l.controller.BookController - Book created with ID: 24
+2025-05-09 23:45:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:45:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:45:17 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:45:17 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13909 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:45:17 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:45:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:45:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:45:18 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:45:18 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:45:18 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:45:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-09 23:45:18 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4236d55
+2025-05-09 23:45:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-09 23:45:18 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:45:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:45:18 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5cb63d05, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@656ac24, org.springframework.security.web.context.SecurityContextHolderFilter@1205d231, org.springframework.security.web.header.HeaderWriterFilter@29e3c7fe, org.springframework.web.filter.CorsFilter@47861e3c, org.springframework.security.web.authentication.logout.LogoutFilter@2e7e9897, com.getir.library_management_system.security.JwtAuthenticationFilter@aa8f19d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@630f24a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@253dbbc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1618b4fa, org.springframework.security.web.access.ExceptionTranslationFilter@1f0b2ffb, org.springframework.security.web.access.intercept.AuthorizationFilter@7c65b55b]
+2025-05-09 23:45:18 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:45:18 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:45:18 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:45:19 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.154 seconds (process running for 12.482)
+2025-05-09 23:45:19 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:45:19 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:45:19 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 25
+2025-05-09 23:45:19 INFO  c.g.l.controller.BookController - Book created with ID: 25
+2025-05-09 23:45:19 INFO  c.g.l.controller.BookController - Fetching book details for ID: 25
+2025-05-09 23:45:19 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 25
+2025-05-09 23:45:19 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Test Book
+2025-05-09 23:45:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-09 23:45:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-09 23:45:19 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:45:19 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13909 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:45:19 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:45:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:45:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:45:19 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:45:19 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:45:19 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:45:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-09 23:45:19 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7c80c68f
+2025-05-09 23:45:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-09 23:45:19 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:45:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:19 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:45:20 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5eb192b7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@248f1090, org.springframework.security.web.context.SecurityContextHolderFilter@27d9ba11, org.springframework.security.web.header.HeaderWriterFilter@1ebbb581, org.springframework.web.filter.CorsFilter@5eb20abb, org.springframework.security.web.authentication.logout.LogoutFilter@33293dac, com.getir.library_management_system.security.JwtAuthenticationFilter@78887bee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@756fd0aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a9ea4d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7514e658, org.springframework.security.web.access.ExceptionTranslationFilter@363b24aa, org.springframework.security.web.access.intercept.AuthorizationFilter@571f925f]
+2025-05-09 23:45:20 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:45:20 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:45:20 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:45:20 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.072 seconds (process running for 13.641)
+2025-05-09 23:45:20 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:45:20 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:45:20 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 26
+2025-05-09 23:45:20 INFO  c.g.l.controller.BookController - Book created with ID: 26
+2025-05-09 23:45:20 INFO  c.g.l.controller.BookController - Updating book with ID: 26
+2025-05-09 23:45:20 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 26
+2025-05-09 23:45:20 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 26
+2025-05-09 23:45:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-09 23:45:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-09 23:45:20 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:45:20 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13909 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:45:20 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:45:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:45:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:45:20 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:45:20 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:45:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:45:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-09 23:45:20 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@c1539bf
+2025-05-09 23:45:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-09 23:45:20 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:45:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:45:21 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e010e07, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f822222, org.springframework.security.web.context.SecurityContextHolderFilter@1a2a94ae, org.springframework.security.web.header.HeaderWriterFilter@4df207e1, org.springframework.web.filter.CorsFilter@24411981, org.springframework.security.web.authentication.logout.LogoutFilter@735c49cc, com.getir.library_management_system.security.JwtAuthenticationFilter@6f99d91f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36840e6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@600dfbca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43948dc8, org.springframework.security.web.access.ExceptionTranslationFilter@1939ecca, org.springframework.security.web.access.intercept.AuthorizationFilter@6ae1ba63]
+2025-05-09 23:45:21 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:45:21 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:45:21 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-05-09 23:45:21 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.933 seconds (process running for 14.646)
+2025-05-09 23:45:21 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:45:21 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:45:21 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 27
+2025-05-09 23:45:21 INFO  c.g.l.controller.BookController - Book created with ID: 27
+2025-05-09 23:45:21 INFO  c.g.l.controller.BookController - Deleting book with ID: 27
+2025-05-09 23:45:21 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 27
+2025-05-09 23:45:21 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 27
+2025-05-09 23:45:21 INFO  c.g.l.controller.BookController - Fetching book details for ID: 27
+2025-05-09 23:45:21 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 27
+2025-05-09 23:45:21 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 27
+2025-05-09 23:45:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-09 23:45:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-09 23:45:21 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:45:21 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 13909 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:45:21 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:45:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:45:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:45:21 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:45:21 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:45:21 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:45:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-09 23:45:21 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@67303bc6
+2025-05-09 23:45:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-09 23:45:21 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:45:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:45:22 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c4e6b39, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b4f914, org.springframework.security.web.context.SecurityContextHolderFilter@138dec8a, org.springframework.security.web.header.HeaderWriterFilter@6700ec4e, org.springframework.web.filter.CorsFilter@4fcc730a, org.springframework.security.web.authentication.logout.LogoutFilter@2775d0d4, com.getir.library_management_system.security.JwtAuthenticationFilter@42bf98f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6387fb09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b626720, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34eff199, org.springframework.security.web.access.ExceptionTranslationFilter@4cd29de4, org.springframework.security.web.access.intercept.AuthorizationFilter@53851bb9]
+2025-05-09 23:45:22 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:45:22 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:45:22 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-05-09 23:45:22 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.903 seconds (process running for 15.642)
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Request to create a new book: Book 0
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 0
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 28
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Book created with ID: 28
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Request to create a new book: Book 1
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 1
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 29
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Book created with ID: 29
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Request to create a new book: Book 2
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 2
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 30
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Book created with ID: 30
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Request to create a new book: Book 3
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 3
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 31
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Book created with ID: 31
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Request to create a new book: Book 4
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 4
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 32
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Book created with ID: 32
+2025-05-09 23:45:22 INFO  c.g.l.controller.BookController - Searching books with keyword: 'Book', page: 0, size: 5
+2025-05-09 23:45:22 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: Book
+2025-05-09 23:45:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:45:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-09 23:45:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-09 23:47:30 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:47:30 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14006 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:47:30 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:47:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:47:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 246 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:47:32 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:47:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:47:32 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:47:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:47:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:47:33 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13714753
+2025-05-09 23:47:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:47:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:47:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:35 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:47:36 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:47:36 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a6017f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14a204f, org.springframework.security.web.context.SecurityContextHolderFilter@51cbd1d, org.springframework.security.web.header.HeaderWriterFilter@41fc5625, org.springframework.web.filter.CorsFilter@4dd4a4e, org.springframework.security.web.authentication.logout.LogoutFilter@660b8572, com.getir.library_management_system.security.JwtAuthenticationFilter@65013d71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e13a74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@594ea722, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e3ccedb, org.springframework.security.web.access.ExceptionTranslationFilter@12aa9370, org.springframework.security.web.access.intercept.AuthorizationFilter@58da6f7d]
+2025-05-09 23:47:37 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:47:37 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:47:37 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:47:37 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 8.197 seconds (process running for 10.072)
+2025-05-09 23:47:38 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:47:38 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:47:38 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 33
+2025-05-09 23:47:38 INFO  c.g.l.controller.BookController - Book created with ID: 33
+2025-05-09 23:47:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:47:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:47:39 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:47:39 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14006 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:47:39 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:47:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:47:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:47:39 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:47:39 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:47:39 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:47:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-09 23:47:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6b21a869
+2025-05-09 23:47:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-09 23:47:39 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:47:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:47:40 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29ab7ccc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5095f89a, org.springframework.security.web.context.SecurityContextHolderFilter@77d5a3ee, org.springframework.security.web.header.HeaderWriterFilter@753bfb4b, org.springframework.web.filter.CorsFilter@4770e50a, org.springframework.security.web.authentication.logout.LogoutFilter@6e32eea5, com.getir.library_management_system.security.JwtAuthenticationFilter@cb715b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b0d8236, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ee9a039, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f7a911f, org.springframework.security.web.access.ExceptionTranslationFilter@7066b8e6, org.springframework.security.web.access.intercept.AuthorizationFilter@aa24615]
+2025-05-09 23:47:40 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:47:40 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:47:40 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:47:40 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.137 seconds (process running for 12.579)
+2025-05-09 23:47:40 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:47:40 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:47:40 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 34
+2025-05-09 23:47:40 INFO  c.g.l.controller.BookController - Book created with ID: 34
+2025-05-09 23:47:40 INFO  c.g.l.controller.BookController - Fetching book details for ID: 34
+2025-05-09 23:47:40 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 34
+2025-05-09 23:47:40 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Test Book
+2025-05-09 23:47:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-09 23:47:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-09 23:47:40 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:47:40 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14006 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:47:40 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:47:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:47:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:47:40 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:47:40 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:47:40 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:47:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-09 23:47:40 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@1a5cb2b3
+2025-05-09 23:47:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-09 23:47:40 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:47:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:47:41 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30428572, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f12af2f, org.springframework.security.web.context.SecurityContextHolderFilter@44f6c323, org.springframework.security.web.header.HeaderWriterFilter@22ef458d, org.springframework.web.filter.CorsFilter@4fe99105, org.springframework.security.web.authentication.logout.LogoutFilter@19c2c3a6, com.getir.library_management_system.security.JwtAuthenticationFilter@43582af1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c5c622, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@334412ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@293f855b, org.springframework.security.web.access.ExceptionTranslationFilter@cc7eeb1, org.springframework.security.web.access.intercept.AuthorizationFilter@24d84d1e]
+2025-05-09 23:47:41 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:47:41 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:47:41 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:47:41 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.052 seconds (process running for 13.718)
+2025-05-09 23:47:41 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:47:41 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:47:41 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 35
+2025-05-09 23:47:41 INFO  c.g.l.controller.BookController - Book created with ID: 35
+2025-05-09 23:47:41 INFO  c.g.l.controller.BookController - Updating book with ID: 35
+2025-05-09 23:47:41 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 35
+2025-05-09 23:47:41 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 35
+2025-05-09 23:47:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-09 23:47:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-09 23:47:41 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:47:41 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14006 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:47:41 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:47:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:47:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:47:41 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:47:41 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:47:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:47:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-09 23:47:41 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@1456ada1
+2025-05-09 23:47:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-09 23:47:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:47:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:47:42 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61303259, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11518582, org.springframework.security.web.context.SecurityContextHolderFilter@288f3ac6, org.springframework.security.web.header.HeaderWriterFilter@2907e348, org.springframework.web.filter.CorsFilter@7a2fd9de, org.springframework.security.web.authentication.logout.LogoutFilter@488702c7, com.getir.library_management_system.security.JwtAuthenticationFilter@effd73, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4704ad3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f04ed21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15fc044d, org.springframework.security.web.access.ExceptionTranslationFilter@37cff0fe, org.springframework.security.web.access.intercept.AuthorizationFilter@2cdbe28]
+2025-05-09 23:47:42 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:47:42 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:47:42 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-05-09 23:47:42 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.918 seconds (process running for 14.723)
+2025-05-09 23:47:42 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:47:42 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:47:42 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 36
+2025-05-09 23:47:42 INFO  c.g.l.controller.BookController - Book created with ID: 36
+2025-05-09 23:47:42 INFO  c.g.l.controller.BookController - Deleting book with ID: 36
+2025-05-09 23:47:42 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 36
+2025-05-09 23:47:42 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 36
+2025-05-09 23:47:42 INFO  c.g.l.controller.BookController - Fetching book details for ID: 36
+2025-05-09 23:47:42 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 36
+2025-05-09 23:47:42 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 36
+2025-05-09 23:47:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-09 23:47:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-09 23:47:42 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:47:42 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14006 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:47:42 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:47:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:47:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:47:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:47:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:47:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:47:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-09 23:47:42 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@1060a720
+2025-05-09 23:47:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-09 23:47:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:47:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:47:43 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2393ef6e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b0a826, org.springframework.security.web.context.SecurityContextHolderFilter@61284400, org.springframework.security.web.header.HeaderWriterFilter@4b5c0183, org.springframework.web.filter.CorsFilter@7fef02d9, org.springframework.security.web.authentication.logout.LogoutFilter@4a6faf7d, com.getir.library_management_system.security.JwtAuthenticationFilter@621177e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1631da37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bfafcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ba3e590, org.springframework.security.web.access.ExceptionTranslationFilter@6136bd80, org.springframework.security.web.access.intercept.AuthorizationFilter@6d692034]
+2025-05-09 23:47:43 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:47:43 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:47:43 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:47:43 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.851 seconds (process running for 15.67)
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Request to create a new book: Book 0
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 0
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 37
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Book created with ID: 37
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Request to create a new book: Book 1
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 1
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 38
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Book created with ID: 38
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Request to create a new book: Book 2
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 2
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 39
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Book created with ID: 39
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Request to create a new book: Book 3
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 3
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 40
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Book created with ID: 40
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Request to create a new book: Book 4
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 4
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 41
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Book created with ID: 41
+2025-05-09 23:47:43 INFO  c.g.l.controller.BookController - Searching books with keyword: 'Book', page: 0, size: 5
+2025-05-09 23:47:43 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: Book
+2025-05-09 23:47:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:47:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-09 23:47:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-09 23:49:57 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:49:57 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14302 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:49:57 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:49:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:49:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 311 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:50:00 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:50:00 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:50:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:50:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:50:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:50:01 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f519714
+2025-05-09 23:50:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:50:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:50:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:06 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:50:07 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:50:08 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5af6aa0a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72943338, org.springframework.security.web.context.SecurityContextHolderFilter@59a53529, org.springframework.security.web.header.HeaderWriterFilter@30f7cf07, org.springframework.web.filter.CorsFilter@12c16090, org.springframework.security.web.authentication.logout.LogoutFilter@6833730d, com.getir.library_management_system.security.JwtAuthenticationFilter@8699088, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@236f2116, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b7adf6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@361d0abb, org.springframework.security.web.access.ExceptionTranslationFilter@17aee70e, org.springframework.security.web.access.intercept.AuthorizationFilter@570fe8a4]
+2025-05-09 23:50:09 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:50:09 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:50:09 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-05-09 23:50:09 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 13.192 seconds (process running for 15.601)
+2025-05-09 23:50:10 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:50:11 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:50:11 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 42
+2025-05-09 23:50:11 INFO  c.g.l.controller.BookController - Book created with ID: 42
+2025-05-09 23:50:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:50:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:50:11 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:50:11 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14302 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:50:11 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:50:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:50:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:50:11 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:50:11 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:50:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:50:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-09 23:50:11 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4d5a6aa0
+2025-05-09 23:50:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-09 23:50:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:50:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:50:12 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@652049db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ef8fdbf, org.springframework.security.web.context.SecurityContextHolderFilter@661d3509, org.springframework.security.web.header.HeaderWriterFilter@7203c886, org.springframework.web.filter.CorsFilter@6be655ac, org.springframework.security.web.authentication.logout.LogoutFilter@4a5a233b, com.getir.library_management_system.security.JwtAuthenticationFilter@1e8d7d6b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55f96aba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29cb59b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22ff51b9, org.springframework.security.web.access.ExceptionTranslationFilter@5e745756, org.springframework.security.web.access.intercept.AuthorizationFilter@279dc9a0]
+2025-05-09 23:50:12 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:50:12 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:50:12 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:50:12 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.427 seconds (process running for 18.714)
+2025-05-09 23:50:12 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:50:12 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:50:12 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 43
+2025-05-09 23:50:12 INFO  c.g.l.controller.BookController - Book created with ID: 43
+2025-05-09 23:50:12 INFO  c.g.l.controller.BookController - Fetching book details for ID: 43
+2025-05-09 23:50:12 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 43
+2025-05-09 23:50:12 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Test Book
+2025-05-09 23:50:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-09 23:50:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-09 23:50:12 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:50:13 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14302 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:50:13 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:50:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:50:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:50:13 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:50:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:50:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:50:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-09 23:50:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@45e01ada
+2025-05-09 23:50:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-09 23:50:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:50:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:50:13 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ef60ee6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cf109bc, org.springframework.security.web.context.SecurityContextHolderFilter@54fa857c, org.springframework.security.web.header.HeaderWriterFilter@747f980c, org.springframework.web.filter.CorsFilter@2dc50af2, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ffb47, com.getir.library_management_system.security.JwtAuthenticationFilter@3347562f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dd184c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@256909bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fcd9248, org.springframework.security.web.access.ExceptionTranslationFilter@2fb2f64f, org.springframework.security.web.access.intercept.AuthorizationFilter@51a06f45]
+2025-05-09 23:50:14 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:50:14 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:50:14 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:50:14 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.228 seconds (process running for 20.114)
+2025-05-09 23:50:14 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:50:14 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:50:14 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 44
+2025-05-09 23:50:14 INFO  c.g.l.controller.BookController - Book created with ID: 44
+2025-05-09 23:50:14 INFO  c.g.l.controller.BookController - Updating book with ID: 44
+2025-05-09 23:50:14 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 44
+2025-05-09 23:50:14 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 44
+2025-05-09 23:50:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-09 23:50:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-09 23:50:14 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:50:14 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14302 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:50:14 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:50:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:50:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:50:14 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:50:14 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:50:14 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:50:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-09 23:50:14 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@3f48cb7a
+2025-05-09 23:50:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-09 23:50:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:50:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:50:15 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8be53fe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cea15bd, org.springframework.security.web.context.SecurityContextHolderFilter@7f75227, org.springframework.security.web.header.HeaderWriterFilter@14ec05b1, org.springframework.web.filter.CorsFilter@114d04f1, org.springframework.security.web.authentication.logout.LogoutFilter@542a0f43, com.getir.library_management_system.security.JwtAuthenticationFilter@3b79143a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b772ecb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d4451b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@206c6bb, org.springframework.security.web.access.ExceptionTranslationFilter@56fe1d6c, org.springframework.security.web.access.intercept.AuthorizationFilter@695f40fb]
+2025-05-09 23:50:15 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:50:15 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:50:15 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:50:15 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.089 seconds (process running for 21.294)
+2025-05-09 23:50:15 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:50:15 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:50:15 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 45
+2025-05-09 23:50:15 INFO  c.g.l.controller.BookController - Book created with ID: 45
+2025-05-09 23:50:15 INFO  c.g.l.controller.BookController - Deleting book with ID: 45
+2025-05-09 23:50:15 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 45
+2025-05-09 23:50:15 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 45
+2025-05-09 23:50:15 INFO  c.g.l.controller.BookController - Fetching book details for ID: 45
+2025-05-09 23:50:15 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 45
+2025-05-09 23:50:15 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 45
+2025-05-09 23:50:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-09 23:50:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-09 23:50:15 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:50:15 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14302 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:50:15 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:50:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:50:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:50:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:50:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:50:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:50:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-09 23:50:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@363cd097
+2025-05-09 23:50:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-09 23:50:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:50:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:50:16 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49a37382, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@adc3f6b, org.springframework.security.web.context.SecurityContextHolderFilter@3047ff30, org.springframework.security.web.header.HeaderWriterFilter@77c89332, org.springframework.web.filter.CorsFilter@477d6382, org.springframework.security.web.authentication.logout.LogoutFilter@69f54934, com.getir.library_management_system.security.JwtAuthenticationFilter@388c65e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69bd1db4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55a6cc36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c8ce6c7, org.springframework.security.web.access.ExceptionTranslationFilter@54fd1b5e, org.springframework.security.web.access.intercept.AuthorizationFilter@b801f5d]
+2025-05-09 23:50:16 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:50:16 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:50:16 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:50:16 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.05 seconds (process running for 22.46)
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Request to create a new book: Book 0
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 0
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 46
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Book created with ID: 46
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Request to create a new book: Book 1
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 1
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 47
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Book created with ID: 47
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Request to create a new book: Book 2
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 2
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 48
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Book created with ID: 48
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Request to create a new book: Book 3
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 3
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 49
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Book created with ID: 49
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Request to create a new book: Book 4
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 4
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 50
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Book created with ID: 50
+2025-05-09 23:50:16 INFO  c.g.l.controller.BookController - Searching books with keyword: 'Book', page: 0, size: 5
+2025-05-09 23:50:16 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: Book
+2025-05-09 23:50:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-09 23:50:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - Deleting user with ID: 1
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - User deleted successfully with ID: 1
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - Updating user with ID: 1
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - User updated successfully with ID: 1
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - Registering new user with email: john@example.com
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - User registered successfully with ID: null
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - Fetching user with ID: 1
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - Deleting user with ID: 1
+2025-05-09 23:50:17 WARN  c.g.l.service.impl.UserServiceImpl - User not found for deletion with ID: 1
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - Updating user with ID: 1
+2025-05-09 23:50:17 WARN  c.g.l.service.impl.UserServiceImpl - User not found for update with ID: 1
+2025-05-09 23:50:17 WARN  c.g.l.service.impl.UserServiceImpl - loadUserByUsername() not implemented. Username: any
+2025-05-09 23:50:17 INFO  c.g.l.service.impl.UserServiceImpl - Fetching user with ID: 1
+2025-05-09 23:50:17 WARN  c.g.l.service.impl.UserServiceImpl - User not found with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - User 1 is attempting to borrow book 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - User 1 is attempting to borrow book 1
+2025-05-09 23:50:18 WARN  c.g.l.s.impl.BorrowingServiceImpl - User not found with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Returning book for borrowing ID: 1
+2025-05-09 23:50:18 WARN  c.g.l.s.impl.BorrowingServiceImpl - Borrowing not found with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - User 1 is attempting to borrow book 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - User 1 is attempting to borrow book 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - User 1 is attempting to borrow book 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Book 1 marked as unavailable
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Borrowing created with ID: null
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - User 1 is attempting to borrow book 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Checking for overdue books as of 2025-05-09
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Returning book for borrowing ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Book 1 marked as available
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Borrowing 1 marked as returned
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Returning book for borrowing ID: 1
+2025-05-09 23:50:18 WARN  c.g.l.s.impl.BorrowingServiceImpl - Borrowing ID 1 is not currently active
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - User 1 is attempting to borrow book 1
+2025-05-09 23:50:18 WARN  c.g.l.s.impl.BorrowingServiceImpl - Book not found with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Fetching all borrowing records
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Fetching borrowing history for user ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.s.impl.BorrowingServiceImpl - Fetching overdue borrowings
+2025-05-09 23:50:18 INFO  c.g.l.s.CustomUserDetailsService - Attempting to load user with email: john@example.com
+2025-05-09 23:50:18 INFO  c.g.l.s.CustomUserDetailsService - Successfully loaded user with email: john@example.com
+2025-05-09 23:50:18 INFO  c.g.l.s.CustomUserDetailsService - Attempting to load user with email: notfound@example.com
+2025-05-09 23:50:18 WARN  c.g.l.s.CustomUserDetailsService - User not found with email: notfound@example.com
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Title
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: java
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 1
+2025-05-09 23:50:18 WARN  c.g.l.service.impl.BookServiceImpl - Cannot delete. Book not found with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Sample
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 1
+2025-05-09 23:50:18 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 1
+2025-05-09 23:50:18 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:50:18 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 1
+2025-05-09 23:50:18 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.getir.library_management_system.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09 23:50:18 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.getir.library_management_system.LibraryManagementSystemApplication for test class com.getir.library_management_system.LibraryManagementSystemApplicationTests
+2025-05-09 23:50:18 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:50:19 INFO  c.g.l.LibraryManagementSystemApplicationTests - Starting LibraryManagementSystemApplicationTests using Java 21.0.7 with PID 14302 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:50:19 INFO  c.g.l.LibraryManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:50:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:50:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:50:20 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:50:20 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:50:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:50:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-05-09 23:50:20 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@3565177d
+2025-05-09 23:50:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-05-09 23:50:20 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:50:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:50:21 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@94df7f0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c90d814, org.springframework.security.web.context.SecurityContextHolderFilter@714bd97b, org.springframework.security.web.header.HeaderWriterFilter@1833ae28, org.springframework.web.filter.CorsFilter@239d38d4, org.springframework.security.web.authentication.logout.LogoutFilter@35ecedb, com.getir.library_management_system.security.JwtAuthenticationFilter@1487087d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f07b2c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29b6e3cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53a23373, org.springframework.security.web.access.ExceptionTranslationFilter@73eabfbd, org.springframework.security.web.access.intercept.AuthorizationFilter@2f4be094]
+2025-05-09 23:50:22 INFO  c.g.l.LibraryManagementSystemApplicationTests - Started LibraryManagementSystemApplicationTests in 3.278 seconds (process running for 28.095)
+2025-05-09 23:50:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:50:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-05-09 23:50:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-05-09 23:53:53 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:53:53 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14588 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:53:53 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:53:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:53:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 238 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:53:55 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:53:55 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:53:55 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:53:55 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:53:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:53:56 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67730dab
+2025-05-09 23:53:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:53:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:53:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:53:58 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:53:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:53:59 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a07479d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fe1a8f9, org.springframework.security.web.context.SecurityContextHolderFilter@627ceaf, org.springframework.security.web.header.HeaderWriterFilter@1d033ae1, org.springframework.web.filter.CorsFilter@2882a80d, org.springframework.security.web.authentication.logout.LogoutFilter@7439cf4b, com.getir.library_management_system.security.JwtAuthenticationFilter@7a68818c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@784bea2c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73852c7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36d28b4c, org.springframework.security.web.access.ExceptionTranslationFilter@6ff08304, org.springframework.security.web.access.intercept.AuthorizationFilter@82da5c9]
+2025-05-09 23:54:00 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:54:00 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:54:00 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-05-09 23:54:00 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 7.902 seconds (process running for 11.602)
+2025-05-09 23:54:00 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:54:00 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:54:00 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 51
+2025-05-09 23:54:00 INFO  c.g.l.controller.BookController - Book created with ID: 51
+2025-05-09 23:54:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:54:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:54:00 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:54:01 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14588 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:54:01 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:54:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:54:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:54:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:54:01 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:54:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:54:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-09 23:54:01 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@1d7c2e47
+2025-05-09 23:54:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-09 23:54:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:54:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:01 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:54:01 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2460c928, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13a7aec7, org.springframework.security.web.context.SecurityContextHolderFilter@4ea9666b, org.springframework.security.web.header.HeaderWriterFilter@318d491, org.springframework.web.filter.CorsFilter@68c39b28, org.springframework.security.web.authentication.logout.LogoutFilter@4f6f13f0, com.getir.library_management_system.security.JwtAuthenticationFilter@401835ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40e43e10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f895fd7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@426ba1d5, org.springframework.security.web.access.ExceptionTranslationFilter@3dfe5b80, org.springframework.security.web.access.intercept.AuthorizationFilter@6b283550]
+2025-05-09 23:54:02 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:54:02 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:54:02 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:54:02 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.111 seconds (process running for 13.294)
+2025-05-09 23:54:02 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:54:02 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:54:02 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 52
+2025-05-09 23:54:02 INFO  c.g.l.controller.BookController - Book created with ID: 52
+2025-05-09 23:54:02 INFO  c.g.l.controller.BookController - Fetching book details for ID: 52
+2025-05-09 23:54:02 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 52
+2025-05-09 23:54:02 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Test Book
+2025-05-09 23:54:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-09 23:54:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-09 23:54:02 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:54:02 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14588 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:54:02 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:54:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:54:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:54:02 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:54:02 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:54:02 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:54:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-09 23:54:02 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@d9e90d2
+2025-05-09 23:54:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-09 23:54:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:54:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:54:02 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@590b1f1e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6892edb0, org.springframework.security.web.context.SecurityContextHolderFilter@72f1a1a7, org.springframework.security.web.header.HeaderWriterFilter@2f667f80, org.springframework.web.filter.CorsFilter@4c07464c, org.springframework.security.web.authentication.logout.LogoutFilter@2022215e, com.getir.library_management_system.security.JwtAuthenticationFilter@33246f17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38fd58f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4327b21f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5972ab3d, org.springframework.security.web.access.ExceptionTranslationFilter@5a8424af, org.springframework.security.web.access.intercept.AuthorizationFilter@c032c75]
+2025-05-09 23:54:03 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:54:03 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:54:03 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:54:03 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.002 seconds (process running for 14.38)
+2025-05-09 23:54:03 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:54:03 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:54:03 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 53
+2025-05-09 23:54:03 INFO  c.g.l.controller.BookController - Book created with ID: 53
+2025-05-09 23:54:03 INFO  c.g.l.controller.BookController - Updating book with ID: 53
+2025-05-09 23:54:03 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 53
+2025-05-09 23:54:03 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 53
+2025-05-09 23:54:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-09 23:54:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-09 23:54:03 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:54:03 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14588 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:54:03 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:54:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:54:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:54:03 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:54:03 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:54:03 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:54:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-09 23:54:03 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@5cef8264
+2025-05-09 23:54:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-09 23:54:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:54:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:54:04 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41b1686e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1eee885c, org.springframework.security.web.context.SecurityContextHolderFilter@3864569f, org.springframework.security.web.header.HeaderWriterFilter@110984b8, org.springframework.web.filter.CorsFilter@513b730, org.springframework.security.web.authentication.logout.LogoutFilter@67c718fc, com.getir.library_management_system.security.JwtAuthenticationFilter@3367faf9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4987383f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20fc059f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fc3b870, org.springframework.security.web.access.ExceptionTranslationFilter@71231636, org.springframework.security.web.access.intercept.AuthorizationFilter@5761bd67]
+2025-05-09 23:54:04 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:54:04 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:54:04 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-05-09 23:54:04 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.117 seconds (process running for 15.578)
+2025-05-09 23:54:04 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:54:04 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:54:04 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 54
+2025-05-09 23:54:04 INFO  c.g.l.controller.BookController - Book created with ID: 54
+2025-05-09 23:54:04 INFO  c.g.l.controller.BookController - Deleting book with ID: 54
+2025-05-09 23:54:04 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 54
+2025-05-09 23:54:04 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 54
+2025-05-09 23:54:04 INFO  c.g.l.controller.BookController - Fetching book details for ID: 54
+2025-05-09 23:54:04 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 54
+2025-05-09 23:54:04 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 54
+2025-05-09 23:54:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-09 23:54:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-09 23:54:04 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:54:04 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14588 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:54:04 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:54:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:54:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:54:04 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:54:04 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:54:04 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:54:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-09 23:54:04 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@7d7efdf5
+2025-05-09 23:54:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-09 23:54:04 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:54:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:54:05 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c810e2c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5611dbb9, org.springframework.security.web.context.SecurityContextHolderFilter@11d176f8, org.springframework.security.web.header.HeaderWriterFilter@13808cf6, org.springframework.web.filter.CorsFilter@52ac965f, org.springframework.security.web.authentication.logout.LogoutFilter@787c4ed3, com.getir.library_management_system.security.JwtAuthenticationFilter@717a02a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48bdb5fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@757047a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73469890, org.springframework.security.web.access.ExceptionTranslationFilter@4aaefbce, org.springframework.security.web.access.intercept.AuthorizationFilter@2af16755]
+2025-05-09 23:54:05 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:54:05 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:54:05 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-05-09 23:54:05 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 0.994 seconds (process running for 16.676)
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Request to create a new book: Book 0
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 0
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 55
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Book created with ID: 55
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Request to create a new book: Book 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 56
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Book created with ID: 56
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Request to create a new book: Book 2
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 2
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 57
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Book created with ID: 57
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Request to create a new book: Book 3
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 3
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 58
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Book created with ID: 58
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Request to create a new book: Book 4
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 4
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 59
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Book created with ID: 59
+2025-05-09 23:54:05 INFO  c.g.l.controller.BookController - Searching books with keyword: 'Book', page: 0, size: 5
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: Book
+2025-05-09 23:54:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-09 23:54:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - Deleting user with ID: 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - User deleted successfully with ID: 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - Updating user with ID: 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - User updated successfully with ID: 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - Registering new user with email: john@example.com
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - User registered successfully with ID: null
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - Fetching user with ID: 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - Deleting user with ID: 1
+2025-05-09 23:54:05 WARN  c.g.l.service.impl.UserServiceImpl - User not found for deletion with ID: 1
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - Updating user with ID: 1
+2025-05-09 23:54:05 WARN  c.g.l.service.impl.UserServiceImpl - User not found for update with ID: 1
+2025-05-09 23:54:05 WARN  c.g.l.service.impl.UserServiceImpl - loadUserByUsername() not implemented. Username: any
+2025-05-09 23:54:05 INFO  c.g.l.service.impl.UserServiceImpl - Fetching user with ID: 1
+2025-05-09 23:54:05 WARN  c.g.l.service.impl.UserServiceImpl - User not found with ID: 1
+2025-05-09 23:54:05 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.getir.library_management_system.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09 23:54:05 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.getir.library_management_system.LibraryManagementSystemApplication for test class com.getir.library_management_system.LibraryManagementSystemApplicationTests
+2025-05-09 23:54:05 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:54:05 INFO  c.g.l.LibraryManagementSystemApplicationTests - Starting LibraryManagementSystemApplicationTests using Java 21.0.7 with PID 14588 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:54:05 INFO  c.g.l.LibraryManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:54:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:54:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:54:06 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:54:06 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:54:06 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:54:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-05-09 23:54:06 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@5ac79bd5
+2025-05-09 23:54:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-05-09 23:54:06 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:54:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:54:06 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e66c414, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3369c143, org.springframework.security.web.context.SecurityContextHolderFilter@23079b73, org.springframework.security.web.header.HeaderWriterFilter@2a105ba6, org.springframework.web.filter.CorsFilter@aa68e5c, org.springframework.security.web.authentication.logout.LogoutFilter@4f405053, com.getir.library_management_system.security.JwtAuthenticationFilter@5c2a52dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40ae9254, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78e62cf2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b3815c7, org.springframework.security.web.access.ExceptionTranslationFilter@3077ee5, org.springframework.security.web.access.intercept.AuthorizationFilter@320075ea]
+2025-05-09 23:54:06 INFO  c.g.l.LibraryManagementSystemApplicationTests - Started LibraryManagementSystemApplicationTests in 0.918 seconds (process running for 17.939)
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Title
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: java
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 1
+2025-05-09 23:54:06 WARN  c.g.l.service.impl.BookServiceImpl - Cannot delete. Book not found with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Sample
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 1
+2025-05-09 23:54:06 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:54:06 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 1
+2025-05-09 23:54:06 INFO  c.g.l.s.CustomUserDetailsService - Attempting to load user with email: john@example.com
+2025-05-09 23:54:06 INFO  c.g.l.s.CustomUserDetailsService - Successfully loaded user with email: john@example.com
+2025-05-09 23:54:06 INFO  c.g.l.s.CustomUserDetailsService - Attempting to load user with email: notfound@example.com
+2025-05-09 23:54:06 WARN  c.g.l.s.CustomUserDetailsService - User not found with email: notfound@example.com
+2025-05-09 23:54:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:54:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-05-09 23:54:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-05-09 23:55:34 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:55:34 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14716 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:55:35 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:55:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:55:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 256 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:55:37 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:55:37 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:55:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:55:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:55:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:55:37 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fe77a97
+2025-05-09 23:55:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:55:39 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:55:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:55:39 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:55:40 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:55:41 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bee8888, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a6ba61b, org.springframework.security.web.context.SecurityContextHolderFilter@4e55d96, org.springframework.security.web.header.HeaderWriterFilter@674db438, org.springframework.web.filter.CorsFilter@7439cf4b, org.springframework.security.web.authentication.logout.LogoutFilter@4289feba, com.getir.library_management_system.security.JwtAuthenticationFilter@3e94a6f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7408c08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@767f03c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11cf1be7, org.springframework.security.web.access.ExceptionTranslationFilter@19273390, org.springframework.security.web.access.intercept.AuthorizationFilter@364f0a6f]
+2025-05-09 23:55:42 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:55:42 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:55:42 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:55:42 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 8.054 seconds (process running for 11.589)
+2025-05-09 23:55:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:55:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:55:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:55:53 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:55:54 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14737 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:55:54 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:55:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:55:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 473 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:55:58 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:55:58 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:55:58 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:55:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:55:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:55:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e378477
+2025-05-09 23:55:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:56:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:56:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:03 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:56:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:56:06 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4148d30c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59f26f92, org.springframework.security.web.context.SecurityContextHolderFilter@311e1c17, org.springframework.security.web.header.HeaderWriterFilter@452b0919, org.springframework.web.filter.CorsFilter@554f6ced, org.springframework.security.web.authentication.logout.LogoutFilter@419cfc4f, com.getir.library_management_system.security.JwtAuthenticationFilter@2524955e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@705b03da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@654be139, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4eabf42d, org.springframework.security.web.access.ExceptionTranslationFilter@4ad5da8d, org.springframework.security.web.access.intercept.AuthorizationFilter@24d78eb1]
+2025-05-09 23:56:08 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:56:08 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:56:08 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-05-09 23:56:08 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 15.651 seconds (process running for 22.346)
+2025-05-09 23:56:08 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:56:09 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:56:09 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 60
+2025-05-09 23:56:09 INFO  c.g.l.controller.BookController - Book created with ID: 60
+2025-05-09 23:56:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:56:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 23:56:09 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:56:09 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14737 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:56:09 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:56:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:56:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:56:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:56:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:56:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:56:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-09 23:56:10 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@318bd58a
+2025-05-09 23:56:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-09 23:56:10 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:56:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:56:11 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21f8dc82, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f23c3b7, org.springframework.security.web.context.SecurityContextHolderFilter@a6b5869, org.springframework.security.web.header.HeaderWriterFilter@5fe1d466, org.springframework.web.filter.CorsFilter@169c0d37, org.springframework.security.web.authentication.logout.LogoutFilter@3c025ef4, com.getir.library_management_system.security.JwtAuthenticationFilter@d8f9d21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bd355dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3de94a2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45a75ed, org.springframework.security.web.access.ExceptionTranslationFilter@dec241, org.springframework.security.web.access.intercept.AuthorizationFilter@1ae106b7]
+2025-05-09 23:56:11 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:56:11 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:56:11 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:56:11 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 2.102 seconds (process running for 25.886)
+2025-05-09 23:56:12 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:56:12 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:56:12 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 61
+2025-05-09 23:56:12 INFO  c.g.l.controller.BookController - Book created with ID: 61
+2025-05-09 23:56:12 INFO  c.g.l.controller.BookController - Fetching book details for ID: 61
+2025-05-09 23:56:12 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 61
+2025-05-09 23:56:12 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Test Book
+2025-05-09 23:56:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-09 23:56:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-09 23:56:12 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:56:12 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14737 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:56:12 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:56:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:56:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:56:13 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:56:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:56:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:56:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-09 23:56:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@19433e91
+2025-05-09 23:56:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-09 23:56:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:56:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:56:13 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22def342, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7de4f7c9, org.springframework.security.web.context.SecurityContextHolderFilter@3b372e23, org.springframework.security.web.header.HeaderWriterFilter@702337b3, org.springframework.web.filter.CorsFilter@366dce28, org.springframework.security.web.authentication.logout.LogoutFilter@3d8c4d35, com.getir.library_management_system.security.JwtAuthenticationFilter@6d1c8e2a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40b1eaaf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@563f1112, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a5ca17f, org.springframework.security.web.access.ExceptionTranslationFilter@142eb40, org.springframework.security.web.access.intercept.AuthorizationFilter@5c3e147e]
+2025-05-09 23:56:14 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:56:14 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:56:14 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-05-09 23:56:14 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.912 seconds (process running for 28.246)
+2025-05-09 23:56:14 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:56:14 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:56:14 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 62
+2025-05-09 23:56:14 INFO  c.g.l.controller.BookController - Book created with ID: 62
+2025-05-09 23:56:14 INFO  c.g.l.controller.BookController - Updating book with ID: 62
+2025-05-09 23:56:14 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 62
+2025-05-09 23:56:14 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 62
+2025-05-09 23:56:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-09 23:56:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-09 23:56:14 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:56:14 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14737 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:56:14 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:56:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:56:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:56:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:56:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:56:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:56:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-09 23:56:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@1d730ab1
+2025-05-09 23:56:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-09 23:56:15 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:56:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:56:16 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f80d369, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64b9860c, org.springframework.security.web.context.SecurityContextHolderFilter@19672027, org.springframework.security.web.header.HeaderWriterFilter@3b2df4fc, org.springframework.web.filter.CorsFilter@3be84453, org.springframework.security.web.authentication.logout.LogoutFilter@77a79ab7, com.getir.library_management_system.security.JwtAuthenticationFilter@960a408, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3059118a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bf70fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@188841d5, org.springframework.security.web.access.ExceptionTranslationFilter@8c77248, org.springframework.security.web.access.intercept.AuthorizationFilter@77ca812a]
+2025-05-09 23:56:16 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:56:16 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:56:16 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-05-09 23:56:16 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.727 seconds (process running for 30.396)
+2025-05-09 23:56:16 INFO  c.g.l.controller.BookController - Request to create a new book: Test Book
+2025-05-09 23:56:16 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Test Book
+2025-05-09 23:56:16 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 63
+2025-05-09 23:56:16 INFO  c.g.l.controller.BookController - Book created with ID: 63
+2025-05-09 23:56:16 INFO  c.g.l.controller.BookController - Deleting book with ID: 63
+2025-05-09 23:56:16 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 63
+2025-05-09 23:56:16 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 63
+2025-05-09 23:56:16 INFO  c.g.l.controller.BookController - Fetching book details for ID: 63
+2025-05-09 23:56:16 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 63
+2025-05-09 23:56:16 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 63
+2025-05-09 23:56:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-09 23:56:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-09 23:56:16 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:56:17 INFO  c.g.l.i.BookControllerIntegrationTest - Starting BookControllerIntegrationTest using Java 21.0.7 with PID 14737 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:56:17 INFO  c.g.l.i.BookControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:56:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:56:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:56:17 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:56:17 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:56:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:56:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-09 23:56:17 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@516d5819
+2025-05-09 23:56:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-09 23:56:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:56:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:56:18 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15dbdd78, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b6c1e13, org.springframework.security.web.context.SecurityContextHolderFilter@3fdcfc5, org.springframework.security.web.header.HeaderWriterFilter@7b7d6f48, org.springframework.web.filter.CorsFilter@733b0fc, org.springframework.security.web.authentication.logout.LogoutFilter@6f7c38a8, com.getir.library_management_system.security.JwtAuthenticationFilter@b8b1ff5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c5fe89b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@128566ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bd8cafc, org.springframework.security.web.access.ExceptionTranslationFilter@591cef00, org.springframework.security.web.access.intercept.AuthorizationFilter@5bf251b]
+2025-05-09 23:56:18 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:56:18 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:56:18 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:56:18 INFO  c.g.l.i.BookControllerIntegrationTest - Started BookControllerIntegrationTest in 1.782 seconds (process running for 32.663)
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Request to create a new book: Book 0
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 0
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 64
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Book created with ID: 64
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Request to create a new book: Book 1
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 1
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 65
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Book created with ID: 65
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Request to create a new book: Book 2
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 2
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 66
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Book created with ID: 66
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Request to create a new book: Book 3
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 3
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 67
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Book created with ID: 67
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Request to create a new book: Book 4
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Book 4
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 68
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Book created with ID: 68
+2025-05-09 23:56:18 INFO  c.g.l.controller.BookController - Searching books with keyword: 'Book', page: 0, size: 5
+2025-05-09 23:56:18 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: Book
+2025-05-09 23:56:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-09 23:56:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - Deleting user with ID: 1
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - User deleted successfully with ID: 1
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - Updating user with ID: 1
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - User updated successfully with ID: 1
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - Registering new user with email: john@example.com
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - User registered successfully with ID: null
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - Fetching user with ID: 1
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - Deleting user with ID: 1
+2025-05-09 23:56:19 WARN  c.g.l.service.impl.UserServiceImpl - User not found for deletion with ID: 1
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - Updating user with ID: 1
+2025-05-09 23:56:19 WARN  c.g.l.service.impl.UserServiceImpl - User not found for update with ID: 1
+2025-05-09 23:56:19 WARN  c.g.l.service.impl.UserServiceImpl - loadUserByUsername() not implemented. Username: any
+2025-05-09 23:56:19 INFO  c.g.l.service.impl.UserServiceImpl - Fetching user with ID: 1
+2025-05-09 23:56:19 WARN  c.g.l.service.impl.UserServiceImpl - User not found with ID: 1
+2025-05-09 23:56:19 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.getir.library_management_system.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09 23:56:19 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.getir.library_management_system.LibraryManagementSystemApplication for test class com.getir.library_management_system.LibraryManagementSystemApplicationTests
+2025-05-09 23:56:19 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-05-09 23:56:19 INFO  c.g.l.LibraryManagementSystemApplicationTests - Starting LibraryManagementSystemApplicationTests using Java 21.0.7 with PID 14737 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:56:19 INFO  c.g.l.LibraryManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:56:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:56:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:56:20 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:56:20 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:56:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:56:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-05-09 23:56:20 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@66c7bbbe
+2025-05-09 23:56:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-05-09 23:56:20 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:56:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:56:21 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c09b857, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fb012ef, org.springframework.security.web.context.SecurityContextHolderFilter@1667f3b3, org.springframework.security.web.header.HeaderWriterFilter@e80e00f, org.springframework.web.filter.CorsFilter@5788660a, org.springframework.security.web.authentication.logout.LogoutFilter@6ff591e8, com.getir.library_management_system.security.JwtAuthenticationFilter@1c00cfde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56fe9c74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f2f1996, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5aed2a1d, org.springframework.security.web.access.ExceptionTranslationFilter@1f3076a, org.springframework.security.web.access.intercept.AuthorizationFilter@7a9efed8]
+2025-05-09 23:56:21 INFO  c.g.l.LibraryManagementSystemApplicationTests - Started LibraryManagementSystemApplicationTests in 1.648 seconds (process running for 35.29)
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Creating a new book with title: Title
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Book created with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Searching books with keyword: java
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 1
+2025-05-09 23:56:21 WARN  c.g.l.service.impl.BookServiceImpl - Cannot delete. Book not found with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Book found: Sample
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Deleting book with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Book deleted with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Book updated with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Fetching book with ID: 1
+2025-05-09 23:56:21 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.service.impl.BookServiceImpl - Updating book with ID: 1
+2025-05-09 23:56:21 WARN  c.g.l.service.impl.BookServiceImpl - Book not found with ID: 1
+2025-05-09 23:56:21 INFO  c.g.l.s.CustomUserDetailsService - Attempting to load user with email: john@example.com
+2025-05-09 23:56:21 INFO  c.g.l.s.CustomUserDetailsService - Successfully loaded user with email: john@example.com
+2025-05-09 23:56:21 INFO  c.g.l.s.CustomUserDetailsService - Attempting to load user with email: notfound@example.com
+2025-05-09 23:56:21 WARN  c.g.l.s.CustomUserDetailsService - User not found with email: notfound@example.com
+2025-05-09 23:56:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:56:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-05-09 23:56:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-05-09 23:58:23 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-09 23:58:23 INFO  c.g.l.i.BorrowingControllerIntegrationTest - Starting BorrowingControllerIntegrationTest using Java 21.0.7 with PID 14888 (started by bahajyy in /Users/bahajyy/Desktop/getir_final_project)
+2025-05-09 23:58:23 INFO  c.g.l.i.BorrowingControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 23:58:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 23:58:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 241 ms. Found 3 JPA repository interfaces.
+2025-05-09 23:58:26 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 23:58:26 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 23:58:26 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 23:58:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 23:58:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 23:58:26 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13137835
+2025-05-09 23:58:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 23:58:28 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 23:58:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:58:29 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-09 23:58:29 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 23:58:30 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b7272d6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21845b36, org.springframework.security.web.context.SecurityContextHolderFilter@4e9ab294, org.springframework.security.web.header.HeaderWriterFilter@2bd2fa2c, org.springframework.web.filter.CorsFilter@376aaeec, org.springframework.security.web.authentication.logout.LogoutFilter@4c33450c, com.getir.library_management_system.security.JwtAuthenticationFilter@1ec98548, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2365facb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65b9ebee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@749330a8, org.springframework.security.web.access.ExceptionTranslationFilter@abb1c3e, org.springframework.security.web.access.intercept.AuthorizationFilter@2779acb2]
+2025-05-09 23:58:31 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-09 23:58:31 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-09 23:58:31 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-09 23:58:31 INFO  c.g.l.i.BorrowingControllerIntegrationTest - Started BorrowingControllerIntegrationTest in 8.016 seconds (process running for 9.631)
+2025-05-09 23:58:32 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23503
+2025-05-09 23:58:32 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: update or delete on table "books" violates foreign key constraint "fk9ep13xg9kn8vo3w0ntvd08tco" on table "borrow_records"
+  Detail: Key (id)=(4) is still referenced from table "borrow_records".
+2025-05-09 23:58:32 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23503
+2025-05-09 23:58:32 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: update or delete on table "books" violates foreign key constraint "fk9ep13xg9kn8vo3w0ntvd08tco" on table "borrow_records"
+  Detail: Key (id)=(4) is still referenced from table "borrow_records".
+2025-05-09 23:58:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 23:58:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 23:58:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

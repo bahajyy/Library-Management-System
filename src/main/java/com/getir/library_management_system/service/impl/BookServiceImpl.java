@@ -2,6 +2,7 @@ package com.getir.library_management_system.service.impl;
 
 import com.getir.library_management_system.exception.BusinessException;
 import com.getir.library_management_system.exception.NotFoundException;
+import com.getir.library_management_system.exception.ResourceNotFoundException;
 import com.getir.library_management_system.model.dto.request.CreateBookRequest;
 import com.getir.library_management_system.model.dto.request.UpdateBookRequest;
 import com.getir.library_management_system.model.dto.response.BookResponse;
@@ -40,7 +41,7 @@ public class BookServiceImpl implements BookService {
         Book book = bookRepository.findById(id)
                 .orElseThrow(() -> {
                     log.warn("Book not found with ID: {}", id);
-                    return new NotFoundException("Book not found");
+                    return new ResourceNotFoundException("Book not found");
                 });
         log.info("Book found: {}", book.getTitle());
         return BookMapper.toResponse(book);

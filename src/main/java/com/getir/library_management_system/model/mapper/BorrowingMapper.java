@@ -10,6 +10,8 @@ public class BorrowingMapper {
     public BorrowingResponse toResponse(Borrowing borrowing) {
         return BorrowingResponse.builder()
                 .id(borrowing.getId())
+                .userId(borrowing.getUser().getId())
+                .bookId(borrowing.getBook().getId())
                 .bookTitle(borrowing.getBook().getTitle())
                 .userEmail(borrowing.getUser().getEmail())
                 .borrowDate(borrowing.getBorrowDate())

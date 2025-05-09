@@ -17,6 +17,7 @@ import com.getir.library_management_system.repository.UserRepository;
 import com.getir.library_management_system.service.BorrowingService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -144,13 +145,15 @@ public class BorrowingServiceImpl implements BorrowingService {
     @Override
     public List<BorrowingResponse> getOverdueBorrowings() {
         log.info("Fetching overdue borrowings");
-        List<Borrowing> overdue = (List<Borrowing>) borrowingRepository
+
+        Page<Borrowing> overduePage = borrowingRepository
                 .findByStatusAndDueDateBefore(BORROWED, LocalDate.now(), Pageable.unpaged());
 
-        return overdue.stream()
+        return overduePage.getContent().stream()
                 .map(borrowingMapper::toResponse)
                 .collect(Collectors.toList());
     }
+
 
     @Override
     public List<OverdueBookResponse> getAllOverdueBooks() {
