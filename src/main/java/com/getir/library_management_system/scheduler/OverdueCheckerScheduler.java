@@ -6,14 +6,15 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-@Slf4j
+@Slf4j // Enables logging
 @Component
 @RequiredArgsConstructor
 public class OverdueCheckerScheduler {
 
     private final BorrowingService borrowingService;
 
-    @Scheduled(cron = "0 0 8 * * *") // her sabah 08:00
+    // Runs every day at 08:00 AM to check for overdue books
+    @Scheduled(cron = "0 0 8 * * *") // every day at 08:00
     public void checkOverdueBooks() {
         var overdueBooks = borrowingService.getAllOverdueBooks();
         overdueBooks.forEach(book ->

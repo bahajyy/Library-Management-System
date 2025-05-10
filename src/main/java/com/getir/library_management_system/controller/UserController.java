@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
-@Slf4j
+@Slf4j // Enables logging
 public class UserController {
 
     private final UserService userService;
@@ -33,7 +33,7 @@ public class UserController {
 
     // Only LIBRARIAN can view a user
     @GetMapping("/{id}")
-    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    @PreAuthorize("hasAuthority('LIBRARIAN')") // Only librarians can fetch user details
     public ResponseEntity<UserResponse> getUser(@PathVariable Long id) {
         log.info("Fetching user with id: {}", id);
         return ResponseEntity.ok(userService.getUser(id));
@@ -41,7 +41,7 @@ public class UserController {
 
     // Only LIBRARIAN can update a user
     @PutMapping("/{id}")
-    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    @PreAuthorize("hasAuthority('LIBRARIAN')") // Only librarians can update users
     public ResponseEntity<UserResponse> updateUser(@PathVariable Long id,
                                                    @Valid @RequestBody UpdateUserRequest request) {
         log.info("Updating user with id: {}", id);
@@ -50,10 +50,10 @@ public class UserController {
 
     // Only LIBRARIAN can delete a user
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    @PreAuthorize("hasAuthority('LIBRARIAN')") // Only librarians can delete users
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         log.warn("Deleting user with id: {}", id);
         userService.deleteUser(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.noContent().build(); // Return 204 No Content
     }
 }

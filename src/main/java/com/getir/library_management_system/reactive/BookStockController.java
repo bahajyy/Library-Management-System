@@ -13,6 +13,7 @@ public class BookStockController {
 
     private final BookStockPublisher publisher;
 
+    // Streams real-time book stock updates using Server-Sent Events (SSE)
     @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<BookStockUpdate> streamBookStock() {
         return publisher.getUpdates();

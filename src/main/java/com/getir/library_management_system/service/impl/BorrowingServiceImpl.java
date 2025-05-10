@@ -41,6 +41,7 @@ public class BorrowingServiceImpl implements BorrowingService {
     private final BorrowingMapper borrowingMapper;
     private final BookStockPublisher bookStockPublisher;
 
+    // Handles book borrowing logic with validations and stock update
     @Override
     public BorrowingResponse borrowBook(BorrowBookRequest request) {
         log.info("User {} is attempting to borrow book {}", request.getUserId(), request.getBookId());
@@ -89,10 +90,13 @@ public class BorrowingServiceImpl implements BorrowingService {
 
         borrowingRepository.save(borrowing);
         log.info("Borrowing created with ID: {}", borrowing.getId());
+
+        // Send real-time stock update
         bookStockPublisher.publish(new BookStockUpdate(book.getId(), book.getTitle(), book.getStock()));
         return borrowingMapper.toResponse(borrowing);
     }
 
+    // Handles returning a book and updating stock/status
     @Override
     public BorrowingResponse returnBook(Long borrowingId) {
         log.info("Returning book for borrowing ID: {}", borrowingId);
@@ -117,10 +121,13 @@ public class BorrowingServiceImpl implements BorrowingService {
         borrowing.setReturnDate(LocalDate.now());
         borrowingRepository.save(borrowing);
         log.info("Borrowing {} marked as returned", borrowing.getId());
+
+        // Notify clients via reactive stream
         bookStockPublisher.publish(new BookStockUpdate(book.getId(), book.getTitle(), book.getStock()));
         return borrowingMapper.toResponse(borrowing);
     }
 
+    // Returns user's borrowing history
     @Override
     public List<BorrowingResponse> getMyBorrowingHistory(Long userId) {
         log.info("Fetching borrowing history for user ID: {}", userId);
@@ -133,6 +140,7 @@ public class BorrowingServiceImpl implements BorrowingService {
                 .collect(Collectors.toList());
     }
 
+    // Returns all borrowings (admin use)
     @Override
     public List<BorrowingResponse> getAllBorrowings() {
         log.info("Fetching all borrowing records");
@@ -142,6 +150,7 @@ public class BorrowingServiceImpl implements BorrowingService {
                 .collect(Collectors.toList());
     }
 
+    // Returns list of borrowings that are overdue
     @Override
     public List<BorrowingResponse> getOverdueBorrowings() {
         log.info("Fetching overdue borrowings");
@@ -154,7 +163,7 @@ public class BorrowingServiceImpl implements BorrowingService {
                 .collect(Collectors.toList());
     }
 
-
+    // Returns list of overdue books with additional details
     @Override
     public List<OverdueBookResponse> getAllOverdueBooks() {
         LocalDate today = LocalDate.now();
@@ -173,6 +182,7 @@ public class BorrowingServiceImpl implements BorrowingService {
                 .toList();
     }
 
+    // Generates a textual summary report of overdue books
     @Override
     public String generateOverdueReport() {
         LocalDate today = LocalDate.now();

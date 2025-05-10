@@ -40,7 +40,7 @@ class BookServiceImplTest {
         MockitoAnnotations.openMocks(this);
     }
 
-    // Test: createBook başarılı
+    // Test: createBook success
     @Test
     void shouldCreateBookSuccessfully() {
         CreateBookRequest request = new CreateBookRequest("Title", "Author", "123", LocalDate.now(), Genre.DRAMA, 5);
@@ -64,7 +64,7 @@ class BookServiceImplTest {
         assertThrows(BusinessException.class, () -> bookService.createBook(request));
     }
 
-    // Test: getBook başarılı
+    // Test: getBook success
     @Test
     void shouldGetBookSuccessfully() {
         Book book = Book.builder().id(1L).title("Sample").isbn("123").build();
@@ -98,7 +98,7 @@ class BookServiceImplTest {
         verify(bookRepository).search("java", pageable);
     }
 
-    // Test: updateBook başarılı
+    // Test: updateBook success
     @Test
     void shouldUpdateBookSuccessfully() {
         Book existing = Book.builder().id(1L).isbn("123").title("Old Title").build();
@@ -112,7 +112,7 @@ class BookServiceImplTest {
         assertEquals("New Title", result.getTitle());
     }
 
-    // Test: updateBook -> ISBN değişirse hata
+    // Test: updateBook -> ISBN changes fail
     @Test
     void shouldThrowWhenIsbnChangedOnUpdate() {
         Book existing = Book.builder().id(1L).isbn("123").build();
@@ -132,7 +132,7 @@ class BookServiceImplTest {
         assertThrows(NotFoundException.class, () -> bookService.updateBook(1L, request));
     }
 
-    // Test: deleteBook başarılı
+    // Test: deleteBook success
     @Test
     void shouldDeleteBookSuccessfully() {
         when(bookRepository.existsById(1L)).thenReturn(true);

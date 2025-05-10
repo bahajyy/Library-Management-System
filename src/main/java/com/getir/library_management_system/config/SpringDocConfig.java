@@ -43,7 +43,7 @@ import org.springframework.context.annotation.Configuration;
         in = SecuritySchemeIn.HEADER
 )
 public class SpringDocConfig {
-
+    // Custom OpenAPI bean
     @Bean
     public OpenAPI libraryOpenAPI() {
         return new OpenAPI();

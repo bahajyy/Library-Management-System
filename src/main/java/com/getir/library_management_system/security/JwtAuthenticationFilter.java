@@ -23,24 +23,27 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Autowired
     com.getir.library_management_system.service.CustomUserDetailsService userDetailsService;
 
-
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
+        // Get Authorization header
         String authHeader = request.getHeader("Authorization");
 
         String jwt = null;
         String username = null;
 
+        // Extract JWT token from header
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             jwt = authHeader.substring(7);
             username = jwtUtil.getUsernameFromJwtToken(jwt);
         }
 
+        // If username is extracted and not already authenticated
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
+            // Validate the JWT and set authentication in the security context
             if (jwtUtil.validateJwtToken(jwt)) {
                 UsernamePasswordAuthenticationToken authToken =
                         new UsernamePasswordAuthenticationToken(
@@ -53,7 +56,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 SecurityContextHolder.getContext().setAuthentication(authToken);
             }
         }
-
+        // Continue the filter chain
         filterChain.doFilter(request, response);
     }
 }

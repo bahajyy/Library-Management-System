@@ -23,6 +23,7 @@ public class BookServiceImpl implements BookService {
 
     private final BookRepository bookRepository;
 
+    // Creates a new book and returns the response
     @Override
     public BookResponse createBook(CreateBookRequest request) {
         if (bookRepository.existsByIsbn(request.getIsbn())) {
@@ -35,6 +36,7 @@ public class BookServiceImpl implements BookService {
         return BookMapper.toResponse(savedBook);
     }
 
+    // Retrieves a book by its ID
     @Override
     public BookResponse getBook(Long id) {
         log.info("Fetching book with ID: {}", id);
@@ -47,6 +49,7 @@ public class BookServiceImpl implements BookService {
         return BookMapper.toResponse(book);
     }
 
+    // Searches books by keyword with pagination
     @Override
     public Page<BookResponse> searchBooks(String keyword, Pageable pageable) {
         log.info("Searching books with keyword: {}", keyword);
@@ -54,6 +57,7 @@ public class BookServiceImpl implements BookService {
                 .map(BookMapper::toResponse);
     }
 
+    // Updates a book's fields except ISBN and returns the updated book
     @Override
     public BookResponse updateBook(Long id, UpdateBookRequest request) {
         log.info("Updating book with ID: {}", id);
@@ -71,6 +75,7 @@ public class BookServiceImpl implements BookService {
         return BookMapper.toResponse(updatedBook);
     }
 
+    // Deletes a book by ID
     @Override
     public void deleteBook(Long id) {
         log.info("Deleting book with ID: {}", id);

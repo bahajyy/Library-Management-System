@@ -29,6 +29,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
 
+    // Registers a new user with encoded password
     @Override
     public UserResponse registerUser(CreateUserRequest request) {
         if (userRepository.existsByEmail(request.getEmail())) {
@@ -42,6 +43,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         return userMapper.toResponse(user);
     }
 
+    // Retrieves user details by ID
     @Override
     public UserResponse getUser(Long id) {
         log.info("Fetching user with ID: {}", id);
@@ -53,6 +55,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         return userMapper.toResponse(user);
     }
 
+    // Updates user details
     @Override
     public UserResponse updateUser(Long id, UpdateUserRequest request) {
         log.info("Updating user with ID: {}", id);
@@ -71,6 +74,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         return userMapper.toResponse(user);
     }
 
+    // Deletes a user by ID
     @Override
     public void deleteUser(Long id) {
         log.info("Deleting user with ID: {}", id);
@@ -83,6 +87,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         log.info("User deleted successfully with ID: {}", id);
     }
 
+    // This method is required by Spring Security but not used in this implementation
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         // Bu metod kullanılmıyor, log eklenmiş haliyle aşağıya bırakıldı.

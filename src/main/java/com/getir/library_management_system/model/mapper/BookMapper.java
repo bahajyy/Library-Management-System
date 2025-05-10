@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BookMapper {
 
+    // Maps CreateBookRequest to Book entity
     public static Book toEntity(CreateBookRequest request) {
         return Book.builder()
                 .title(request.getTitle())
@@ -20,6 +21,7 @@ public class BookMapper {
                 .build();
     }
 
+    // Updates existing Book entity with fields from UpdateBookRequest
     public static void updateEntity(Book book, UpdateBookRequest request) {
         book.setTitle(request.getTitle());
         book.setAuthor(request.getAuthor());
@@ -29,6 +31,7 @@ public class BookMapper {
         book.setStock(request.getStock());
     }
 
+    // Maps Book entity to BookResponse DTO
     public static BookResponse toResponse(Book book) {
         return BookResponse.builder()
                 .id(book.getId())

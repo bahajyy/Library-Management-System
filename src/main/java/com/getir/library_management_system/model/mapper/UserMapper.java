@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserMapper {
 
+    // Maps CreateUserRequest DTO to User entity
     public static User toEntity(CreateUserRequest request) {
         return User.builder()
                 .name(request.getName())
@@ -18,7 +19,7 @@ public class UserMapper {
                 .build();
     }
 
-
+    // Maps User entity to UserResponse DTO
     public UserResponse toResponse(User user) {
         return UserResponse.builder()
                 .id(user.getId())

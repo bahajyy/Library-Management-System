@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-@Slf4j
+@Slf4j // Enables logging with log.info(), log.warn(), etc.
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
@@ -23,17 +23,19 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
-        log.info("Login attempt for email: {}", request.getEmail());
+        log.info("Login attempt for email: {}", request.getEmail()); // Log login attempt
         try {
+            // Authenticate user credentials
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword())
             );
+            // Generate JWT token upon successful authentication
             String token = jwtUtil.generateJwtToken(authentication);
-            log.info("Authentication successful for email: {}", request.getEmail());
-            return ResponseEntity.ok(new JwtResponse(token));
+            log.info("Authentication successful for email: {}", request.getEmail()); // Log success
+            return ResponseEntity.ok(new JwtResponse(token)); // Return token in response
         } catch (AuthenticationException e) {
-            log.warn("Authentication failed for email: {}", request.getEmail());
-            return ResponseEntity.status(401).body("Invalid email or password");
+            log.warn("Authentication failed for email: {}", request.getEmail()); // Log failure
+            return ResponseEntity.status(401).body("Invalid email or password"); // Return 401 on failure
         }
     }
 }

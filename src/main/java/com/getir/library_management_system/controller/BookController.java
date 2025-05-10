@@ -20,29 +20,29 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/books")
 @RequiredArgsConstructor
-@Slf4j
+@Slf4j // Enables logging
 public class BookController {
 
     private final BookService bookService;
 
     @PostMapping
-    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    @PreAuthorize("hasAuthority('LIBRARIAN')") // Only librarians can add books
     public ResponseEntity<BookResponse> createBook(@Valid @RequestBody CreateBookRequest request) {
         log.info("Request to create a new book: {}", request.getTitle());
         BookResponse response = bookService.createBook(request);
         log.info("Book created with ID: {}", response.getId());
-        return new ResponseEntity<>(response, HttpStatus.CREATED);
+        return new ResponseEntity<>(response, HttpStatus.CREATED); // Return 201 Created
     }
 
     @GetMapping("/{id}")
-    @PreAuthorize("hasAnyAuthority('LIBRARIAN', 'PATRON')")
+    @PreAuthorize("hasAnyAuthority('LIBRARIAN', 'PATRON')") // Both roles can view book details
     public ResponseEntity<BookResponse> getBook(@PathVariable Long id) {
         log.info("Fetching book details for ID: {}", id);
         return ResponseEntity.ok(bookService.getBook(id));
     }
 
     @GetMapping
-    @PreAuthorize("hasAnyAuthority('LIBRARIAN', 'PATRON')")
+    @PreAuthorize("hasAnyAuthority('LIBRARIAN', 'PATRON')") // Both roles can search books
     public ResponseEntity<Page<BookResponse>> searchBooks(
             @RequestParam(defaultValue = "") String keyword,
             @RequestParam(defaultValue = "0") int page,
@@ -53,7 +53,7 @@ public class BookController {
     }
 
     @PutMapping("/{id}")
-    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    @PreAuthorize("hasAuthority('LIBRARIAN')") // Only librarians can update books
     public ResponseEntity<BookResponse> updateBook(
             @PathVariable Long id,
             @Valid @RequestBody UpdateBookRequest request) {
@@ -62,10 +62,10 @@ public class BookController {
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasAuthority('LIBRARIAN')")
+    @PreAuthorize("hasAuthority('LIBRARIAN')") // Only librarians can delete books
     public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
         log.info("Deleting book with ID: {}", id);
         bookService.deleteBook(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.noContent().build(); // Return 204 No Content
     }
 }

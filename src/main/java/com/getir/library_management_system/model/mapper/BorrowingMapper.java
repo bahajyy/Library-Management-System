@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BorrowingMapper {
-
+    // Maps Borrowing entity to BorrowingResponse DTO
     public BorrowingResponse toResponse(Borrowing borrowing) {
         return BorrowingResponse.builder()
                 .id(borrowing.getId())
