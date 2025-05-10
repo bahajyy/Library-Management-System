@@ -1,6 +1,8 @@
 
 # Library Management System
 
+## Author Baha J. Yılmaz
+
 Library Management System is a backend application built to manage the operations of a digital library. It supports user registration, book catalog management, borrowing and returning books, and tracking overdue borrowings. The system includes user role-based access (Librarian & Patron), JWT-based authentication, and reactive stock updates via WebFlux.
 
  # ✨ Key Features:
