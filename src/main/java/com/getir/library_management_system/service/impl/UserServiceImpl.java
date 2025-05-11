@@ -90,7 +90,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     // This method is required by Spring Security but not used in this implementation
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        // Bu metod kullanılmıyor, log eklenmiş haliyle aşağıya bırakıldı.
         log.warn("loadUserByUsername() not implemented. Username: {}", username);
         return null;
     }
