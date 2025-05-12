@@ -8,11 +8,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.util.Collections;
 
 import static org.mockito.Mockito.*;
-
+@ActiveProfiles("test")
 class JwtAuthenticationFilterTest {
 
     private JwtAuthenticationFilter filter;

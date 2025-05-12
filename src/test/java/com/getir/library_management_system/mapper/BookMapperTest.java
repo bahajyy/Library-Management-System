@@ -7,11 +7,12 @@ import com.getir.library_management_system.model.entity.Book;
 import com.getir.library_management_system.model.enums.Genre;
 import com.getir.library_management_system.model.mapper.BookMapper;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@ActiveProfiles("test")
 class BookMapperTest {
 
     @Test

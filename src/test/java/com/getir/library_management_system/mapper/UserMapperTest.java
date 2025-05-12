@@ -6,9 +6,10 @@ import com.getir.library_management_system.model.entity.User;
 import com.getir.library_management_system.model.enums.UserType;
 import com.getir.library_management_system.model.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@ActiveProfiles("test")
 class UserMapperTest {
 
     private final UserMapper userMapper = new UserMapper();

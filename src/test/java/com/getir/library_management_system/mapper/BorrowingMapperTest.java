@@ -7,11 +7,12 @@ import com.getir.library_management_system.model.entity.User;
 import com.getir.library_management_system.model.enums.BorrowingStatus;
 import com.getir.library_management_system.model.mapper.BorrowingMapper;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@ActiveProfiles("test")
 class BorrowingMapperTest {
 
     private final BorrowingMapper borrowingMapper = new BorrowingMapper();
